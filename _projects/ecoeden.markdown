@@ -86,18 +86,21 @@ Using the power of computer automation and social interactions in the digital re
 
 <script>
 
-    var index = 0;
-    var tempImg = new Image();
+    var index = 0
+    var slideCount = 21
+    var tempImg = new Image()
+
+    const event = new Event('splidesLoaded');
 
     tempImg.onload = function(){
-    appendImage();
+        appendImage();
     }
     var tryLoadImage = function( index ){
-    tempImg.src = '/assets/img/ecoeden/slides/ecoeden-' + index + '.jpg';
+        tempImg.src = '/assets/img/ecoeden/slides/ecoeden-' + index + '.jpg'
     }
 
     var appendImage = function(){
-        
+
         var newImage = document.createElement('img')
         newImage.setAttribute('class', 'image-item')
         newImage.setAttribute('height', '400')
@@ -108,9 +111,14 @@ Using the power of computer automation and social interactions in the digital re
         liItem.appendChild(newImage)
 
         document.getElementById('ecoeden-slides').appendChild(liItem)
-        tryLoadImage( ++index )
+        index = index + 1
 
-        console.log(newImage.src)
+        if (index < slideCount) {
+            tryLoadImage ( index )
+        }
+        else {
+            document.dispatchEvent(event);
+        }
     }
 
     tryLoadImage( index );

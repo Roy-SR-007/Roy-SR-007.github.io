@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('splidesLoaded', function () {
     setTimeout(function(){
         new Splide('.splide', {
             type  : 'fade',
