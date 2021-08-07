@@ -74,7 +74,13 @@ Using the power of computer automation and social interactions in the digital re
 
 <hr>
 
-<div class="splide">
+<div id="splide-loader" class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-0" src="https://i.pinimg.com/originals/df/d2/68/dfd2683c9701642c776e31d3b0d603a9.gif" alt="" title=""/>
+    </div>
+</div>
+
+<div class="splide" id="splide-master" hidden="true">
 	<div class="splide__track">
 		<ul id="ecoeden-slides" class="splide__list">			
 		</ul>

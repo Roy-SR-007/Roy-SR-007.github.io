@@ -1,8 +1,11 @@
 document.addEventListener('splidesLoaded', function () {
-    setTimeout(function(){
-        new Splide('.splide', {
-            type  : 'fade',
-	        rewind: true,
-        }).mount();
-    }, 500);    
+    
+    document.getElementById("splide-loader").setAttribute("hidden", true);
+    document.getElementById("splide-master").removeAttribute("hidden");
+
+    new Splide('.splide', {
+        type  : 'fade',
+        rewind: true,
+    }).mount();
+
 } );
