@@ -75,8 +75,8 @@ Using the power of computer automation and social interactions in the digital re
 <hr>
 
 <div id="splide-loader" class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-0" src="https://thumbs.gfycat.com/PepperyMediumBrahmancow-max-1mb.gif" alt="" title=""/>
+    <div class="col-sm-2 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-0" src="{{ '/assets/img/spinner.gif' | relative_url }}" alt="" title=""/>
     </div>
 </div>
 
