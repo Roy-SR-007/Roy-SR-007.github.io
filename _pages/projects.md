@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: Ideas that finally saw the light of the day
 nav: true
-display_categories: [Social,AntiSocial]
+display_categories: [Research Papers,R Packages]
 horizontal: true
 ---
 <div class="projects">
