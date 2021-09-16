@@ -2,7 +2,7 @@
 layout: page
 title: The Gambler's Ruin Problem
 description: Introducing Games of Chance
-img: /assets/img/GRP/GRP_1.jpg
+img: /assets/img/GRP/grp.gameplay.png
 importance: 1
 year: 2020 - 2021
 category: Research Papers
