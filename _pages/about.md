@@ -24,3 +24,5 @@ As a budding statistician, I take major interest in both theoretical as well as 
 
 At the [107th Indian Science Congress, 2020](http://www.sciencecongress.nic.in/), held at [University of Agriculutural Sciences, Bangalore](https://uasbangalore.edu.in/index.php/kannada-uas), I presented my research works (*poster presentation*) on **Situations of Random Supply in a Classical Newsboy Problem** and **Alternative Optimization Criteria in a Newsvendor Problem**, concerning to the field of Theoretical and Applied Probability.
 
+In addition to my academics and research activities, I spend a major amount of time in creating and developing [R-packages](https://www.rstudio.com/products/rpackages/) and [Interactive Web Applications](https://www.axonn.co.uk/interactive-web-applications) using [R](https://www.r-project.org/), [R Studio](https://www.rstudio.com/), [R Shiny](https://shiny.rstudio.com/), [Netlify](https://www.netlify.com/) and [Blogdown](https://bookdown.org/yihui/blogdown/).
+
