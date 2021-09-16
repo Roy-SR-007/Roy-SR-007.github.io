@@ -1,14 +1,19 @@
 ---
 layout: page
-title: EcoEden
-description: The Green Social Media
-img: /assets/img/ecoeden/ecoeden-1.png
+title: The Gambler's Ruin Problem
+description: Introducing Games of Chance
+img: /assets/img/gamblersruin/GRP_1.jpg
 importance: 1
-year: 2020
+year: 2020 - 2021
 category: Research Papers
 ---
 
-Creating a sustainable environment is all about maintaining a responsible interaction such that the grandeur of the world around us can be cherished not only by people of today but also the future generations for eons to come. Rise in modernization in recent times has made the society too focussed on the individual being, sometimes even leading to the negligence of the environment in many cases. 
+The research was completed under the guidance of [Prof.Pallabi Ghosh, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata]() and [Dr.Durba Bhattacharya, HOD, Department of Statistics, St.Xavier's College, Kolkata](). The topic and the idea to research in the established avenue of Applied Probability was suggested by [Dr.Ayan Chandra, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata]().
+
+Considering the general problem, which is as follows,
+
+> *Let there be two Gamblers (players) A and B. Player A starts the game with an initial amount of Rs.\\(n_1\\) and Player B starts the game with an initial amount of Rs.\\(n_2\\), such that the total amount of money available in the game is Rs.(\\(n_1 + n_2\\)). Suppose the probability of winning a particular round of the game for A is ’p’ and that for B is ’q = 1-p’. When A wins a round, Rs.1 is received by A from B and when B wins, Rs.1 is received by B from A. The game stops when one of the player goes bankrupt and
+the other wins all the money, i.e., Rs.(\\(n_1 + n_2\\)). Then what is the probability of A or B winning the game?*
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3">
