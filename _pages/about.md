@@ -2,10 +2,10 @@
 layout: about
 title: about
 permalink: /
-description: Undergraduate Research Assistant, Jadavpur University, India
+description: Graduate in Statistics, St.Xavier's College (Autonomous), Kolkata, India
 profile:
   align: right
-  image: profile_pic.jpg
+  image: Profile_Pic.jpeg
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
