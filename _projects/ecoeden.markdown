@@ -5,7 +5,7 @@ description: The Green Social Media
 img: /assets/img/ecoeden/ecoeden-1.png
 importance: 1
 year: 2020
-category: Social
+category: Research Papers
 ---
 
 Creating a sustainable environment is all about maintaining a responsible interaction such that the grandeur of the world around us can be cherished not only by people of today but also the future generations for eons to come. Rise in modernization in recent times has made the society too focussed on the individual being, sometimes even leading to the negligence of the environment in many cases. 
