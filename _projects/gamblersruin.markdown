@@ -15,6 +15,8 @@ Considering the general problem, which is as follows,
 > *Let there be two Gamblers (players) A and B. Player A starts the game with an initial amount of Rs.\\(n_1\\) and Player B starts the game with an initial amount of Rs.\\(n_2\\), such that the total amount of money available in the game is Rs.(\\(n_1 + n_2\\)). Suppose the probability of winning a particular round of the game for A is ’p’ and that for B is ’q = 1-p’. When A wins a round, Rs.1 is received by A from B and when B wins, Rs.1 is received by B from A. The game stops when one of the player goes bankrupt and
 the other wins all the money, i.e., Rs.(\\(n_1 + n_2\\)). Then what is the probability of A or B winning the game?*
 
+The solution of the above problem statement has been approached on two different levels, i.e., [Simulating the solution]() & [Solving by Difference Equations]().  
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3">
         <img class="img-fluid rounded z-depth-1" src="https://www.zameen.com/news/wp-content/uploads/2018/08/factory-pollution.jpg" alt="" title=""/>
