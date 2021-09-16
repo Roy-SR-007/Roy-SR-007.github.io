@@ -12,7 +12,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a senior year undergraduate student in the Dept. of Computer Science and Engineering at [Jadavpur University](http://www.jaduniv.edu.in). I am presently remotely working as a part of [UbiLab](https://uwaterloo.ca/ubiquitous-health-technology-lab/) as a [MITACS Globalink Research Intern](https://www.mitacs.ca/en/programs/globalink/globalink-research-internship) at the [University of Wateloo](https://uwaterloo.ca/) to develop a rich data ecosystem capable of mining and hosting air quality data from consumer-level air quality monitors installed in [Ulaanbaatar, Mongolia](https://en.wikipedia.org/wiki/Ulaanbaatar).
+I have completed my graduation in [Statistics Honours](https://www.sxccal.edu/b-sc-statistics-department/) from [St.Xavier's College (Autonomous), Kolkata](https://www.sxccal.edu/), 2018 - 2021 batch.
+
+senior year undergraduate student in the Dept. of Computer Science and Engineering at [Jadavpur University](http://www.jaduniv.edu.in). I am presently remotely working as a part of [UbiLab](https://uwaterloo.ca/ubiquitous-health-technology-lab/) as a [MITACS Globalink Research Intern](https://www.mitacs.ca/en/programs/globalink/globalink-research-internship) at the [University of Wateloo](https://uwaterloo.ca/) to develop a rich data ecosystem capable of mining and hosting air quality data from consumer-level air quality monitors installed in [Ulaanbaatar, Mongolia](https://en.wikipedia.org/wiki/Ulaanbaatar).
 
 As an [IASc-INSA-NASI](https://www.ias.ac.in/) Summer Research Fellow, I have previously worked on formal verification of AcasXu-like neural networks at the [Indian Statistical Institute, Kolkata](https://www.isical.ac.in/) under the supervision of [Dr. Ansuman Bannerjee](https://scholar.google.co.in/citations?hl=en&user=rGFo1TQAAAAJ&view_op=list_works&sortby=pubdate).
 
