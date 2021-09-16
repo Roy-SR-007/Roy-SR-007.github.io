@@ -8,13 +8,13 @@
         }
       },
       "color": {
-        "value": "#0976b5"
+        "value": "#B509AC"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#0976b5"
+          "color": "#B509AC"
         },
         "polygon": {
           "nb_sides": 5
@@ -43,7 +43,7 @@
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#0976b5",
+        "color": "#B509AC",
         "opacity": 0.4,
         "width": 1
       },
@@ -66,11 +66,11 @@
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
