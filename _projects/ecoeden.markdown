@@ -24,6 +24,7 @@ Creating a sustainable environment is all about maintaining a responsible intera
 
 The modern society has subjected the environment to various kinds of pollution in their constant struggle to increase efficiency by greater technological means. The pace at which the quality of the environment is degrading, environmental scientists expect within the next 200 years, the Earth will become completely uninhabitable for humans to survive.
 
+\\(\frac{1}{2}\\)
 
 In light of the alarming situation impending, we plan to be the flagbearers of the next movement which intends to create a disruption in the current societal atmosphere by using the same technological advancements to help the environment. We have developed a new social media platform which plans to save the environment by incentivizing users to take care of their surroundings.
 
