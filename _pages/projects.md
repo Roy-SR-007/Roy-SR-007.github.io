@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Ideas that finally saw the light of the day
+description: An humble effort to showcase ideas!
 nav: true
 display_categories: [Research Papers,R Packages]
 horizontal: true
