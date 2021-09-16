@@ -11,7 +11,7 @@ last_name: Roy
 
 email: somjit.roy2001@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Official website of Pritthijit Nath
+  Official website of Somjit Roy
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
 
@@ -50,11 +50,11 @@ og_image: /assets/img/profile_pic.jpg # The site-wide (default for all links) Op
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: nathzi1505 # your GitHub user name
+github_username: Roy-SR-007 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: pritthijit # your LinkedIn user name
-scholar_userid: KdzVBhQAAAAJ # your Google Scholar ID
+linkedin_username: linkedin.com/in/somjit-r-6b0965114 # your LinkedIn user name
+scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -69,8 +69,8 @@ dblp_url: # your DBLP profile url
 contact_note: >
   Always open to exploring new ideas over a cup of coffee. 
 
-google_analytics: G-J1EFHSDC62 # out your google-analytics code
-panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+google_analytics:  # out your google-analytics code
+panelbear_analytics: # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
 # Blog
