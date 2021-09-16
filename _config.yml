@@ -67,7 +67,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 
 contact_note: >
-  Always open to exploring new ideas over a cup of coffee. 
+  Trying to be statistically significant! 
 
 google_analytics:  # out your google-analytics code
 panelbear_analytics: # panelbear analytics site ID
@@ -154,8 +154,8 @@ github: [metadata]
 
 scholar:
 
-  last_name: Nath
-  first_name: [Pritthijit, P.]
+  last_name: Roy
+  first_name: [Somjit, S.]
 
   style: ieee
   locale: en
