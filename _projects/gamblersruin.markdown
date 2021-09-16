@@ -38,11 +38,9 @@ $$\mathbb{P}_i = \begin{cases}
     Factories have been a major source of pollution in recent times. Due to global warming, glacier melts have led to rising sea levels around the world. Forecasts suggest much of the continental seacoasts would be underwater by 2050.
 </div>
 
-The modern society has subjected the environment to various kinds of pollution in their constant struggle to increase efficiency by greater technological means. The pace at which the quality of the environment is degrading, environmental scientists expect within the next 200 years, the Earth will become completely uninhabitable for humans to survive.
+Another major conundrum under the topic addressed is the *Expected Duration until Ruin*. Major simulations have been done to come up with a solution, along with a concrete mathematical point of view, which includes the usage of [Non-homogenous Linear Difference Equations](https://advancesindifferenceequations.springeropen.com/articles/10.1186/s13662-016-0839-x).
 
-\\(\frac{1}{2}\\)
-
-In light of the alarming situation impending, we plan to be the flagbearers of the next movement which intends to create a disruption in the current societal atmosphere by using the same technological advancements to help the environment. We have developed a new social media platform which plans to save the environment by incentivizing users to take care of their surroundings.
+The major concepts and fine ideas to look out for while reading the paper is [Modeling Gambler's Ruin in terms of Random Walks and Markov Chains](https://www.cs.princeton.edu/courses/archive/fall13/cos521/lecnotes/lec12.pdf), along with the application of [Higher Order Transitional Matrices](https://en.wikipedia.org/wiki/Transition_matrix) for visualizing the convergence of long-run probabilities of winning and losing a game, that is being played under the gambler's ruin setup.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
