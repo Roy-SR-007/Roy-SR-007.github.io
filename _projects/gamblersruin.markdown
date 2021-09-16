@@ -8,14 +8,23 @@ year: 2020 - 2021
 category: Research Papers
 ---
 
-The research was completed under the guidance of [Prof.Pallabi Ghosh, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata]() and [Dr.Durba Bhattacharya, HOD, Department of Statistics, St.Xavier's College, Kolkata](). The topic and the idea to research in the established avenue of Applied Probability was suggested by [Dr.Ayan Chandra, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata]().
+The research was completed under the guidance of [Prof.Pallabi Ghosh, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2021/02/Pallabi-Ghosh.pdf) and [Dr.Durba Bhattacharya, HOD, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2020/01/DurbaBhattacharya.pdf). The topic and the idea to research in the established avenue of Applied Probability was suggested by [Dr.Ayan Chandra, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2020/01/AyanChandra.pdf).
 
 Considering the general problem, which is as follows,
 
 > *Let there be two Gamblers (players) A and B. Player A starts the game with an initial amount of Rs.\\(n_1\\) and Player B starts the game with an initial amount of Rs.\\(n_2\\), such that the total amount of money available in the game is Rs.(\\(n_1 + n_2\\)). Suppose the probability of winning a particular round of the game for A is ’p’ and that for B is ’q = 1-p’. When A wins a round, Rs.1 is received by A from B and when B wins, Rs.1 is received by B from A. The game stops when one of the player goes bankrupt and
 the other wins all the money, i.e., Rs.(\\(n_1 + n_2\\)). Then what is the probability of A or B winning the game?*
 
-The solution of the above problem statement has been approached on two different levels, i.e., [Simulating the solution]() & [Solving by Difference Equations]().  
+The solution of the above problem statement has been approached on two different levels, i.e., [Simulating the solution](https://onlinelibrary.wiley.com/doi/10.1002/sim.8086) & [Solving by Difference Equations](https://www.cl.cam.ac.uk/teaching/2003/Probability/prob07.pdf). Mainly the concept of [Monte - Carlo Simulations](https://www4.stat.ncsu.edu/~davidian/st810a/simulation_handout.pdf) have been used for majority of the simulations in the paper. I would like to provide the mathematical and probabilistic expressions as solution to the above problem statement, which is as follows:
+
+> The probability that a gambler will win a game, played under the gambler's ruin setup, when starting initially with Rs.i (say), is 
+
+$$\mathbb{P}_i = \begin{cases}
+\frac{1-(\frac{1-p}{p})^i}{1-(\frac{1-p}{p})^(n_1+n_2)}, p \neq 1-p \\
+\frac{i}{n_1+n_2}, p = \frac{1}{2}
+\end{cases}$$
+
+
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3">
