@@ -2,7 +2,7 @@
 layout: page
 title: COVID - 19
 description: A Statistical Walk through the Pandemic
-img: /assets/img/covid/moxa-0.jpg
+img: /assets/img/covid/covid_1.jpg
 importance: 1
 year: 2020
 category: Research & Internship
