@@ -28,8 +28,6 @@ This project was completed under the humble guidance of [Dr.Subhamoy Maitra, ASU
         <img class="img-fluid rounded z-depth-1" src="https://www.who.int/images/default-source/departments/health-security-preparedness/cer/simex/simex-gallery/02_vaccine-ttx.tmb-1920v.png?sfvrsn=6fb51b46_1" alt="" title=""/>
     </div>
 </div>
-<div class="caption">
-    Health workers visiting a locality to collect RT-PCR samples to gauge the infection spread in that residential area
-</div>
+
 
 Major perspectives and results have been presented majorly describing the above mentioned propositions. A special attention has been given to the fact that *how COVID-19 has affected the world of education?*. Data was colected from different undergraduate students and professors to host and organise a detailed analysis. Feel free to binge through the [paper](https://docs.google.com/document/d/1upZyIsOnHIE91sSWlYsB8fyXomJyrSlH/edit?usp=sharing&ouid=102070392430420715240&rtpof=true&sd=true).
