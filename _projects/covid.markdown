@@ -1,11 +1,11 @@
 ---
 layout: page
-title: MOXA10k
-description: Real-Time Mask Detection System
-img: /assets/img/moxa/moxa-0.jpg
+title: COVID - 19
+description: A Statistical Walk through the Pandemic
+img: /assets/img/covid/moxa-0.jpg
 importance: 1
 year: 2020
-category: AntiSocial
+category: Research & Internship
 ---
 
 The COVID-19 pandemic has changed the way we socialize once and for all. Maintaining safety protocols have now become utmost concern wherever we go and with whoever we talk to. To reduce contact, the majority of the entire working class has moved to the safety of their homes. But whenever, one goes out, the imperturbable Face Mask has now become mandatory in our lives.
