@@ -5,7 +5,7 @@ description: Introducing Games of Chance
 img: /assets/img/GRP/grp.gameplay.png
 importance: 1
 year: 2020 - 2021
-category: Research Papers
+category: Research & Internship
 ---
 
 The research was completed under the guidance of [Prof.Pallabi Ghosh, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2021/02/Pallabi-Ghosh.pdf) and [Dr.Durba Bhattacharya, HOD, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2020/01/DurbaBhattacharya.pdf). The topic and the idea to research in the established avenue of Applied Probability was suggested by [Dr.Ayan Chandra, Assistant Professor, Department of Statistics, St.Xavier's College, Kolkata](https://www.sxccal.edu/wp-content/uploads/2020/01/AyanChandra.pdf).
