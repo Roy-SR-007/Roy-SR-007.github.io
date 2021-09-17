@@ -1,6 +1,6 @@
 ---
 layout: page
-title: COVID - 19
+title: COVID-19
 description: A Statistical Walk through the Pandemic
 img: /assets/img/covid/covid_1.jpg
 importance: 2
@@ -8,80 +8,28 @@ year: 2020
 category: Research & Internship
 ---
 
-The COVID-19 pandemic has changed the way we socialize once and for all. Maintaining safety protocols have now become utmost concern wherever we go and with whoever we talk to. To reduce contact, the majority of the entire working class has moved to the safety of their homes. But whenever, one goes out, the imperturbable Face Mask has now become mandatory in our lives.
+It is quite amusing and surprising that how data can reveal facts about a particular phenomenon which is difficult for one to observe through bare eyes. Following the similar analogy, in this paper, data has been collected to analyse the ongoing pandemic COVID-19 to various extents. The Analysis is supported by basic Statistical tools and coding, to give a clear view of the ongoing situations in India due to the widespread of the virus. We have exploited every possible area, where COVID-19 has inflicted despoliation.
+
+This project was completed under the humble guidance of [Dr.Subhamoy Maitra, ASU, ISI Kolkata](https://www.isical.ac.in/~subho/). Working for almost more than 4 months on the project, the major areas of analysis and the queries targetted are as follows:
+
+*	The analysis will help us to grasp a strong view over the entire scenario of COVID 19.
+*	It will provide us with a clear understanding of the present situation of the disease and how it is affecting the World.
+*	We will be able to draw conclusions about the behavioural pattern of the disease.
+*	Visualization of the consequences incurred due to the ongoing pandemic is also a key aspect of this analysis.
+*	The rate at which recoveries, deaths and new cases are occurring is also analysed.
+*	The effect of COVID 19 on the gender of the victims.
+*	A brief study on the most common symptoms of the aforesaid disease.
+*	The effect of Lockdown/Quarantine as a solution/remedy to the ongoing scenario created by the pandemic- Was it at all useful?
+*	The beginning of a new Academic Era - Online Education, almost a by-product of the pandemic.
+
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="https://www.indiaspend.com/h-upload/2020/12/17/359858-covid-19-retrospective1600.jpg" alt="" title=""/>
+        <img class="img-fluid rounded z-depth-1" src="https://www.who.int/images/default-source/departments/health-security-preparedness/cer/simex/simex-gallery/02_vaccine-ttx.tmb-1920v.png?sfvrsn=6fb51b46_1" alt="" title=""/>
     </div>
 </div>
 <div class="caption">
     Health workers visiting a locality to collect RT-PCR samples to gauge the infection spread in that residential area
 </div>
 
-To monitor whether safety protocols are maintained in different areas, local police agencies have to resort to installed CCTV camera footage in order to mark areas which need additional measures. Nowadays, these cameras are already endowed with computer vision functionalities through embedded systems and have been used in wide range of applications, most notably license plate detection.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="https://sod.pixlab.io/images/out_plate.png" alt="" title=""/>
-    </div>
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="https://learn.alwaysai.co/hubfs/object-dectection-4.jpg" alt="" title=""/>
-    </div>
-</div>
-<div class="caption">
-    Common use cases such as license plate detection and object detection
-</div>
-
-Similarly, face mask detection can be thought of as a special case of object detection. Although, detection can be done fairly accurately using different state-of-the-art object detection methods, the real time performance is the one that needs to be taken into considering as all practical use cases demand instant processing of results for rapid response measures.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="https://user-images.githubusercontent.com/4096485/82835867-f1c62380-9ecd-11ea-9134-1598ed2abc4b.png" alt="" title=""/>
-    </div>  
-</div>
-<div class="caption">
-    Performance comparison of Yolov4 v/s other SOTA object detection methods
-</div>
-
-For this project, we used [YOLOv4](https://arxiv.org/abs/2004.10934), one of the most popular object detection methods, which claims to use universal features such as Weighted-Residual-Connections (WRC), Cross-Stage-Partial-connections (CSP), Cross mini-Batch Normalization (CmBN), Self-adversarial-training (SAT) and Mish-activation to have a considerable increase in real time processing on widely used GPUs.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-1a.jpg' | relative_url }}" alt="" title=""/>
-    </div>
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-1b.jpg' | relative_url }}" alt="" title=""/>
-    </div>
-</div>
-<div class="caption">
-    (Left) Original image and (Right) Output image with bounding boxes drawn on faces along with the predicted mask/nomask annotations
-</div>
-
-Even though detection on faces which occupy a good portion of the image are is relatively easy, long range detection is extremely tough and requires a specialized training dataset. By coordinating with an arrangement with Kolkata Police, a 2-3 CCTV feeds were taken for annotation purposes. The feed videos were broken into frames and around 10k frames were annotated by hand for model training purposes. The final trained model showed a considerable increase in performance for long range detection purposes where other models by other police agencies failed.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-2a.jpg' | relative_url }}" alt="" title=""/>
-    </div>
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-2b.jpg' | relative_url }}" alt="" title=""/>
-    </div>
-    <div class="col-sm-6 mt-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-2c.jpg' | relative_url }}" alt="" title=""/>
-    </div>
-</div>
-<div class="caption">
-   Output images with bounding boxes drawn on faces along with the predicted mask/nomask annotations along with long range detections
-</div>
-
-Using YOLOv4, we were able to achieve around 30 FPS on Full HD footage.
-Along with extensive documentation, the final product delivered was containerized for easy deployment. The docker code used for YOLOv4 deployment can be found in the following public GitHub repository.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-5 mt-3">
-        <a href="https://github.com/nathzi1505/yolov4-darknet-docker" target="_blank">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/moxa/moxa-3.jpg' | relative_url }}" alt="" title=""/>
-        </a>
-    </div>
-</div>
+Major perspectives and results have been presented majorly describing the above mentioned propositions. A special attention has been given to the fact that *how COVID-19 has affected the world of education?*. Data was colected from different undergraduate students and professors to host and organise a detailed analysis. Feel free to binge through the [paper](https://docs.google.com/document/d/1upZyIsOnHIE91sSWlYsB8fyXomJyrSlH/edit?usp=sharing&ouid=102070392430420715240&rtpof=true&sd=true).
