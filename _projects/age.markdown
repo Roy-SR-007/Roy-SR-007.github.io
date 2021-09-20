@@ -1,7 +1,7 @@
 ---
 layout: page
-title: COVID-19
-description: Age vs Usage of Technology - An EDA
+title: Age vs Usage of Technology
+description: An Exploratory Data Analysis
 img: /assets/img/age/age_1.png
 importance: 2
 year: 2020
@@ -28,6 +28,6 @@ The approach which was undertaken is widely known as **Exploratory Data Analysis
     </div>
 </div>
 
-The analysis was successfully completed once again under the supervision of [Dr.Subhamoy Maitra, ASI, ISI Kolkata](https://www.isical.ac.in/~subho/). To thoroughly glance through the study and inference that has been drawn, feel free to read the [paper]().
+The analysis was successfully completed once again under the supervision of [Dr.Subhamoy Maitra, ASI, ISI Kolkata](https://www.isical.ac.in/~subho/). To thoroughly glance through the study and inference that has been drawn, feel free to read the [paper](https://docs.google.com/document/d/1AGmEtII40x8OVZd5jrCNuJ6ZCvdQM1yN/edit?usp=sharing&ouid=102070392430420715240&rtpof=true&sd=true).
 
 It goes without saying that, the study has a prospective aim in itself, i.e., to facilitate any resources and records to undertake technological advancements and innovations for the elderly (60+ aged individuals).
