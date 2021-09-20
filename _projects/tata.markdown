@@ -13,7 +13,7 @@ The project was undertaken by a team of candidates, with [Dr.Subhamoy Maitra, AS
 Due to NDA issues, much could not be discussed and disclosed about the insights of the project and its corresponding progress. Whereas, the project mainly touches over the following skillsets, tools, objectives and methodologies:
 
 * Data Engineering including Data Cleaning, Visualization and Crunching to extract important and significant insights about the ongoing process.
-* Statistical Modeling and Computational Statistics closely related to Data Science and Machine Learning techniques.  
+* Basic Statistical Measures, Statistical Modeling and Computational Statistics closely related to Data Science and Machine Learning techniques.  
 * Mathematical Formulations of the probelems and queries posed.
 * Statistical Quality Control.
 * An attempt to present an Economic avenue of the problem (specifically the process optimization).  
