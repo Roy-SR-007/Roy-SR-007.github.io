@@ -26,5 +26,5 @@ At the [107th Indian Science Congress, 2020](http://www.sciencecongress.nic.in/)
 
 In addition to my academics and research activities, I spend a major amount of time in creating and developing [R-packages](https://www.rstudio.com/products/rpackages/) and [Interactive Web Applications](https://www.axonn.co.uk/interactive-web-applications) using [R](https://www.r-project.org/), [R Studio](https://www.rstudio.com/), [R Shiny](https://shiny.rstudio.com/), [Netlify](https://www.netlify.com/) and [Blogdown](https://bookdown.org/yihui/blogdown/).
 
-Here is the link to one of my other websites [Somjit Roy](https://somjitroysr.netlify.app/), which I have developed and deployed using R Studio, Netlify and Blogdown. Here I mostly showcase all the problem solving skills and coding skills, thereby, displaying a wide array of simulations and problems related to Mathematics, Statistics and Probability.
+Here is a [document](https://drive.google.com/file/d/1K-6QlDsIbkoRFLuLled6876b4McSQXrQ/view?usp=sharing), which comprises of different problems in *Statistics*, *Probability*, *Mathematics*, etc. which I keep on updating as and when required.
 
