@@ -28,3 +28,5 @@ In addition to my academics and research activities, I spend a major amount of t
 
 Here is a [document](https://drive.google.com/file/d/1K-6QlDsIbkoRFLuLled6876b4McSQXrQ/view?usp=sharing), which comprises of different problems in *Statistics*, *Probability*, *Mathematics*, etc. which I keep on updating as and when required.
 
+[This](https://roysomjitsr.shinyapps.io/grp_simulator/) is an interactive web application developed through **R Shiny**, which simulates a gambling game under the **Gambler's Ruin** setup. It allows you to give inputs for the amount of money you have, the amount which you want to win and an option for playing an Unibiased (Fair) or a Biased game, accordingly performing the simulation, following the gambler's ruin setup and thereby feeding you with your resulted game trajectory. 
+
