@@ -26,6 +26,9 @@ The approach which was undertaken is widely known as **Exploratory Data Analysis
     <div class="col-sm-10 mt-3">
         <img class="img-fluid rounded z-depth-1" src="https://www.pewresearch.org/wp-content/uploads/2019/09/FT_19.09.03_DigitalDivideGenerations_1.png?resize=768,493" alt="" title=""/>
     </div>
+    <div>
+      
+    </div>
 </div>
 
 The analysis was successfully completed once again under the supervision of [Dr.Subhamoy Maitra, ASI, ISI Kolkata](https://www.isical.ac.in/~subho/). To thoroughly glance through the study and inference that has been drawn, feel free to read the [paper](https://docs.google.com/document/d/1AGmEtII40x8OVZd5jrCNuJ6ZCvdQM1yN/edit?usp=sharing&ouid=102070392430420715240&rtpof=true&sd=true).
