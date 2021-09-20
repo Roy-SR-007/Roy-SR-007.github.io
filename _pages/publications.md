@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Contributions to both theory and software
+description: Contributions to both Theory and Software!
 years: [2020 - 2021]
 nav: true
 ---
