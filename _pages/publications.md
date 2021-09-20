@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Humble contributions to advance scientific thought and experimentation
-years: [2021]
+description: Contributions to both theory and software
+years: [2020 - 2021]
 nav: true
 ---
 
