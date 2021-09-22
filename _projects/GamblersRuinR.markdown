@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 'YatesAlgo.FactorialExp.SR'
-description: Determines the sum of squares of the (2^n)-1 factorial effects in a 2^n factorial experiment using Yates' algorithm.
-img: /assets/img/Yates/Yates_1.png
+title: 'gamblers.ruin.gameplay'
+description: One-Dimensional Random Walks Through Simulation of the Gambler's Ruin Problem.
+img: /assets/img/GamblersR/GRPR.png
 importance: 1
 year: 2021
 category: R Packages
