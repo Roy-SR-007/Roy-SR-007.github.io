@@ -44,7 +44,7 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
-og_image: /assets/img/profile_pic.jpeg # The site-wide (default for all links) Open Graph preview image
+og_image: https://roy-sr-007.github.io/assets/img/profile_pic.jpeg #/assets/img/profile_pic.jpeg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
