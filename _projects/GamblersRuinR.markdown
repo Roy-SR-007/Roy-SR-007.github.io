@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'gamblers.ruin.gameplay'
+title: gamblers.ruin.gameplay
 description: One-Dimensional Random Walks Through Simulation of the Gambler's Ruin Problem.
 img: /assets/img/GamblersR/GRPR.png
 importance: 1
