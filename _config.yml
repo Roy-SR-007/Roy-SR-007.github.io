@@ -13,7 +13,7 @@ email: somjit.roy2001@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Official website of Somjit Roy
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme and<a href="https://nath.p3jit.com/" target="_blank">Pritthijit Nath.</a>
 
 icon: # the emoji used as the favicon
 url: https://roy-sr-007.github.io/ # the base hostname & protocol for your site
