@@ -30,7 +30,7 @@ Here is a [document](https://drive.google.com/file/d/1K-6QlDsIbkoRFLuLled6876b4M
 
 [This](https://roysomjitsr.shinyapps.io/grp_simulator/) is an interactive web application developed through **R Shiny**, which simulates a gambling game under the **Gambler's Ruin** setup. It allows you to give inputs for the amount of money you have, the amount which you want to win and an option for playing an Unbiased (Fair) or a Biased game, accordingly performing the simulation, following the gambler's ruin setup and thereby feeding you with your resulted game trajectory. 
 
----
+-----------
 
 ### News
 
