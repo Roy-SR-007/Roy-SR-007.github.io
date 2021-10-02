@@ -37,5 +37,5 @@ Here is a [document](https://drive.google.com/file/d/1K-6QlDsIbkoRFLuLled6876b4M
 #### 2021
 
 * I would be joining the [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html), [University of Calcutta](https://www.caluniv.ac.in/) for Master of Science (MSc.) in Statistics Hons (2021 - 2023). 
-* Currently working with Mutually Unbiased Bases (MUB's) - an interdisciplinary research in the field of Quantum Cryptography. 
+* Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**. 
 
