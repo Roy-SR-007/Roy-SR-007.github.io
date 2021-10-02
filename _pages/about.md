@@ -12,7 +12,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I have completed my graduation (*Bachelors of Science* [BSc.]) in *Statistics Honours* from [St.Xavier's College (Autonomous), Kolkata](https://www.sxccal.edu/), [Department of Statistics](https://www.sxccal.edu/b-sc-statistics-department/), 2018 - 2021 batch. I am an incoming post-graduate (*Masters of Science* [MSc.]) candidate in *Statistics Honours* at [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html), [University of Calcutta](https://www.caluniv.ac.in/), 2021 - 2023 batch.
+I have completed my graduation (*Bachelors of Science* [BSc.]) in *Statistics Honours* from [St.Xavier's College (Autonomous), Kolkata](https://www.sxccal.edu/), [Department of Statistics](https://www.sxccal.edu/b-sc-statistics-department/), 2018 - 2021 batch.
 
 I have previously worked under the Quality Control Wing of [Tata Electronics,Pvt Ltd.](https://www.tata.com/) as a [Summer Intern]() under the guidance of [Dr.Subhamoy Maitra , ASU, ISI Kolkata](https://www.isical.ac.in/~subho/) and [Nagasubramanian Kothandaraman, Tata Electronics]() (**Company Supervisor**), being involved in a 3 months long project (*May - July, 2021*), entitled **Surface Finishing and Anodizing - Process Optimization using Data Analytics**, working under the broad area of *Process Optimization* using regular *Data Science tools* and methodologies concerning to *Statistical Quality Control*.
 
@@ -32,5 +32,10 @@ Here is a [document](https://drive.google.com/file/d/1K-6QlDsIbkoRFLuLled6876b4M
 
 -----------
 
-### News
+## News
+
+#### 2021
+
+* I would be joining the [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html), [University of Calcutta](https://www.caluniv.ac.in/) for Master of Science (MSc.) in Statistics Hons (2021 - 2023). 
+* Currently working with Mutually Unbiased Bases (MUB's) - an interdisciplinary research in the field of Quantum Cryptography. 
 
