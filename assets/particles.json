@@ -44,7 +44,7 @@
         "enable": true,
         "distance": 150,
         "color": "#6050DC",
-        "opacity": 0.8,
+        "opacity": 0.6,
         "width": 1
       },
       "move": {
