@@ -49,7 +49,5 @@ In the above table, Column 5 gives us the Factorial Effect Totals, which is requ
 * First Order Interactions : **AB**, **AC** and **BC**
 * Second Order Interaction : **ABC**
 
-In general, the Sum of Squares of a Factorial Effect in a \\(2^n\\) Factorial Experiment is given by,
-
-$$SS(X) = \frac{{\hat{X}}^2}{r2^n}$$.
+In general, the Sum of Squares of a Factorial Effect in a \\(2^n\\) Factorial Experiment is given by, \\(SS(X) = \frac{{\hat{X}}^2}{r2^n}\\).
 
