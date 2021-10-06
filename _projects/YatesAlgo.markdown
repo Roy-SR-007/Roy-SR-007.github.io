@@ -32,16 +32,16 @@ The standard order of treatment combination is -- 1, a, b, ab, c, ac, bc, abc. L
 
 Therefore, the Yates' Algorithm as discussed above will give rise to the following table.
 
-| Col 1 | Col 2 | Col 3        | Col 4                     | Col 5                                                                  |
-| :--- | :----: | :----------: | :-----------------------: | ---------------------------------------------------------------------: |
-| 1    | {1}    | {1} + {a}    | {1} + {a} + {b} + {ab}    | {1} + {a} + {b} + {ab} + {c} + {ac} + {bc} + {abc}                     |
-| a    | {a}    | {b} + {ab}   | {c} + {ac} + {bc} + {abc} | -{1} + {a} - {b} + {ab} + {ac} - {c} + {abc} - {bc} = \\({\hat{A}}\\)  |
-| b    | {b}    | {c} + {ac}   | {a} - {1} + {ab} - {b}    | -{1} - {a} + {b} + {ab} - {ac} - {c} + {abc} + {bc} = \\({\hat{B}}\\)  |
-| ab   | {ab}   | {bc} + {abc} | {ac} - {c} + {abc} - {bc} | {1} - {a} - {b} + {ab} - {ac} + {c} + {abc} - {bc} = \\({\hat{AB}}\\)  |
-| c    | {c}    | {a} - {1}    | {b} + {ab} - {1} - {a}    | -{1} - {a} - {b} - {ab} + {ac} + {c} + {abc} + {bc} = \\({\hat{C}}\\)  |
-| ac   | {ac}   | {ab} - {b}   | {bc} + {abc} - {c} - {ac} | {ac} - {c} + {abc} - {bc} - {a} + {1} - {ab} + {b} = \\({\hat{AC}}\\)  |
-| bc   | {bc}   | {ac} - {c}   | {ab} - {b} - {a} + {1}    | {bc} + {abc} - {c} - {ac} - {b} - {ab} + {1} + {a} = \\({\hat{BC}}\\)  |
-| abc  | {abc}  | {c} + {ac}   | {abc} - {bc} - {ac} + {c} | {abc} - {bc} - {ac} + {c} - {ab} + {b} + {a} - {1} = \\({\hat{ABC}}\\) |
+| Col 1 | Col 2 | Col 3        | Col 4                     | Col 5                                                                  | Factorial Effect Totals |
+| :---: | :---: | :---:        | :---:                     | :---:                                                                  | :---:                   |
+| 1    | {1}    | {1} + {a}    | {1} + {a} + {b} + {ab}    | {1} + {a} + {b} + {ab} + {c} + {ac} + {bc} + {abc}                     | -                       |
+| a    | {a}    | {b} + {ab}   | {c} + {ac} + {bc} + {abc} | -{1} + {a} - {b} + {ab} + {ac} - {c} + {abc} - {bc}                    | \\({\hat{A}}\\)         |
+| b    | {b}    | {c} + {ac}   | {a} - {1} + {ab} - {b}    | -{1} - {a} + {b} + {ab} - {ac} - {c} + {abc} + {bc}                    | \\({\hat{B}}\\)         |
+| ab   | {ab}   | {bc} + {abc} | {ac} - {c} + {abc} - {bc} | {1} - {a} - {b} + {ab} - {ac} + {c} + {abc} - {bc}                     | \\({\hat{AB}}\\)        | 
+| c    | {c}    | {a} - {1}    | {b} + {ab} - {1} - {a}    | -{1} - {a} - {b} - {ab} + {ac} + {c} + {abc} + {bc}                    | \\({\hat{C}}\\)         |
+| ac   | {ac}   | {ab} - {b}   | {bc} + {abc} - {c} - {ac} | {ac} - {c} + {abc} - {bc} - {a} + {1} - {ab} + {b}                     | \\({\hat{AC}}\\)        |
+| bc   | {bc}   | {ac} - {c}   | {ab} - {b} - {a} + {1}    | {bc} + {abc} - {c} - {ac} - {b} - {ab} + {1} + {a}                     | \\({\hat{BC}}\\)        |
+| abc  | {abc}  | {c} + {ac}   | {abc} - {bc} - {ac} + {c} | {abc} - {bc} - {ac} + {c} - {ab} + {b} + {a} - {1}                     | \\({\hat{ABC}}\\)       |
 
 In the above table, Column 5 gives us the Factorial Effect Totals, which is required for the calculation of the Sum of Squares of the required \\(2^{n} - 1\\) many Factorial Effects, i.e., in the above \\(2^3\\) experiment, there are \\(2^{3} - 1 = 7\\) Factorial Effects, i.e.,
 
