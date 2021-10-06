@@ -32,6 +32,8 @@ The standard order of treatment combination is -- 1, a, b, ab, c, ac, bc, abc. L
 
 Therefore, the Yates' Algorithm as discussed above will give rise to the following table.
 
+![](YatesTable.jpg)
+
 | Col 1 | Col 2 | Col 3        | Col 4                     | Col 5                                                                  | Factorial Effect Totals |
 | :---: | :---: | :---:        | :---:                     | :---:                                                                  | :---:                   |
 | 1    | {1}    | {1} + {a}    | {1} + {a} + {b} + {ab}    | {1} + {a} + {b} + {ab} + {c} + {ac} + {bc} + {abc}                     | -                       |
