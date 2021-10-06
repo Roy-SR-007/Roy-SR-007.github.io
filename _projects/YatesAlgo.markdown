@@ -45,6 +45,8 @@ Therefore, the Yates' Algorithm as discussed above will give rise to the followi
 | bc   | {bc}   | {ac} - {c}   | {ab} - {b} - {a} + {1}    | {bc} + {abc} - {c} - {ac} - {b} - {ab} + {1} + {a}                     | \\({\hat{BC}}\\)        |
 | abc  | {abc}  | {c} + {ac}   | {abc} - {bc} - {ac} + {c} | {abc} - {bc} - {ac} + {c} - {ab} + {b} + {a} - {1}                     | \\({\hat{ABC}}\\)       |
 
+<br />
+
 In the above table, Column 5 gives us the Factorial Effect Totals, which is required for the calculation of the Sum of Squares of the required \\(2^{n} - 1\\) many Factorial Effects, i.e., in the above \\(2^3\\) experiment, there are \\(2^{3} - 1 = 7\\) Factorial Effects, i.e.,
 
 * Main Effects : **A**, **B** and **C**
