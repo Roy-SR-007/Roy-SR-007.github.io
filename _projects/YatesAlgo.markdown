@@ -16,13 +16,13 @@ Consider **n** factors each at **two** levels. The number of **Factorial Effects
 
 Yates' provided an algorithm to obtain the **Sum of Squares** of the different factorial effects of a \\(2^{n}\\) experiment in a systematic order.
 
-* **Step 1**: Write down the \\(2^n\\) treatment combinations in the [**standard order**](https://cran.r-project.org/package=TrtCombo.FactorialExp.SR) in the first column.
+**Step 1**: Write down the \\(2^n\\) treatment combinations in the [standard order](https://cran.r-project.org/package=TrtCombo.FactorialExp.SR) in the first column.
 
-* **Step 2**: In the second column, write down the total of the treatment combinations in their standard order, as noted in column 1.
+**Step 2**: In the second column, write down the total of the treatment combinations in their standard order, as noted in column 1.
 
-* **Step 3**: In the third column, break the number of treatment combination totals in column 2 into pairs of 2. Each pair consists of two consecutive treatment totals starting from {1}. In the **first half** of the **third column**, write down the **sums** of the consecutive pairs serially. In the **second half** of the **third column**, write down the **difference** of the first member of the pair from its second, serially.
+**Step 3**: In the third column, break the number of treatment combination totals in column 2 into pairs of 2. Each pair consists of two consecutive treatment totals starting from {1}. In the **first half** of the **third column**, write down the **sums** of the consecutive pairs serially. In the **second half** of the **third column**, write down the **difference** of the first member of the pair from its second, serially.
 
-* **Step 4**: From the fourth to the (n+2)th column, repeat the process as in Step 3. That is, to fill up a column, divide the preeceding column into pairs. In the first half of the present column, write down the sums of the consecutive pairs of the preceeding column serially. In the second half of the present column, write down the difference of the first member of the pair from its second in the preceeding column serially. The **(n+2)th** column gives the factorial effect totals of the \\(2^n\\) experiment.
+**Step 4**: From the fourth to the (n+2)th column, repeat the process as in Step 3. That is, to fill up a column, divide the preeceding column into pairs. In the first half of the present column, write down the sums of the consecutive pairs of the preceeding column serially. In the second half of the present column, write down the difference of the first member of the pair from its second in the preceeding column serially. The **(n+2)th** column gives the factorial effect totals of the \\(2^n\\) experiment.
 
 ### A Toy Example of the Algorithm
 
