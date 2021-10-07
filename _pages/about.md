@@ -26,6 +26,8 @@ At the [107th Indian Science Congress, 2020](http://www.sciencecongress.nic.in/)
 
 In addition to my academics and research activities, I spend a major amount of time in creating and developing [R-packages](https://www.rstudio.com/products/rpackages/) and [Interactive Web Applications](https://www.axonn.co.uk/interactive-web-applications) using [R](https://www.r-project.org/), [R Studio](https://www.rstudio.com/), [R Shiny](https://shiny.rstudio.com/), [Netlify](https://www.netlify.com/) and [Blogdown](https://bookdown.org/yihui/blogdown/).
 
+I also like to actively participate in research activities that stretches beyond Statistics and Mathematics, i.e., having a taste for interdisciplinary research. 
+
 -----------
 
 ## News
