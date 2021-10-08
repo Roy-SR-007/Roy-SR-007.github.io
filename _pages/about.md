@@ -36,7 +36,7 @@ I also like to actively participate in research activities that stretches beyond
 
 * I would be joining the [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html), [University of Calcutta](https://www.caluniv.ac.in/) for Master of Science (MSc.) in Statistics Hons (2021 - 2023). 
 
-* Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**. I am involved with the approximation of MUB's (dimension = 6) using combinatorial designs, such as RBD - Resolvable Block Designs. Also trying out simulations to achieve finer approximations of the 6 dimensional MUB's through generation of random matrices in *Ginibre Ensemble*, i.e., generating *Random Unitary Matrices distributed with Haar Measure*.
+* Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**. I am involved with the approximation of MUB's (dimension = 6) using combinatorial designs, such as *RBD - Resolvable Block Designs*. Also trying out simulations to achieve finer approximations of the 6 dimensional MUB's through generation of random matrices in *Ginibre Ensemble*, i.e., generating *Random Unitary Matrices distributed with Haar Measure*.
 
 
 -----------
