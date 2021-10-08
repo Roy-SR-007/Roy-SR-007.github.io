@@ -15,7 +15,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme and<a href="https://nath.p3jit.com/" target="_blank"> Pritthijit Nath</a>. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a>
 
-icon: favicon.png # the emoji used as the favicon
+icon: # the emoji used as the favicon
 url: https://roy-sr-007.github.io/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
