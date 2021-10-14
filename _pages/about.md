@@ -38,7 +38,7 @@ I also like to actively participate in research activities that stretches beyond
 
 * Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**. Few of the recent involvements and ventures of the topic that I am interested in, are as follows:
   * Approximation of MUB's (Mutually Unbiased Bases) using simulations through generation of random matrices in *Ginibre Ensemble*, i.e., generating *Random Unitary Matrices distributed with Haar Measure*.
-  * *Entanglement* in MUB's - Numerical Computation of *Partial Traces* in *Bipartite* & *Multipartite systems*, an application aimed at reducing time complexity. 
+  * *Entanglement* in MUB's - Numerical Computation of *Partial Traces* in *Bipartite* & *Multipartite systems*. 
 
 
 -----------
