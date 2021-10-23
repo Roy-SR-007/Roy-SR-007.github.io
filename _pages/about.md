@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Graduate in Statistics, St.Xavier's College (Autonomous), Kolkata, India
+description: Postgraduate @CU || Graduate @SXC in Statistics || Research Intern @ISI KOLKATA
 profile:
   align: right
   image: Profile_Pic.jpeg
