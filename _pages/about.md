@@ -36,7 +36,8 @@ I also like to actively participate in research activities that stretches beyond
 
 * I would be joining the [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html), [University of Calcutta](https://www.caluniv.ac.in/) for Master of Science (MSc.) in Statistics Hons (2021 - 2023). 
 
-* Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**. Few of the recent involvements and ventures of the topic that I am interested in, are as follows:
+* Currently working with **Mutually Unbiased Bases (MUB's)** - an interdisciplinary research in the field of **Quantum Cryptography**, a problem having a past history of more than 30 years. Few of the recent involvements and ventures of the topic that I am interested in, are as follows:
+  * Dealing with Search Algorithms to optimize the fourth mutually unbiased base, for six dimensional MUB's. 
   * Approximation of MUB's (Mutually Unbiased Bases) using simulations through generation of random matrices in *Ginibre Ensemble*, i.e., generating *Random Unitary Matrices distributed with Haar Measure*.
   * *Entanglement* in MUB's - Numerical Computation of *Partial Traces* in *Bipartite* & *Multipartite systems*. 
 
