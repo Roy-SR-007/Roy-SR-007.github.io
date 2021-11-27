@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /software/
-title: Software
+permalink: /teaching/
+title: teaching
 description: The Open Source : Applications & Contributions
 nav: true
 ---
