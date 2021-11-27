@@ -38,6 +38,10 @@ We are all familiar with the concept of **convergence of a sequence**. This app 
     </div>
 </p>
 ```
+<br />
+
+This shiny app basically demonstrates the determination of \\(n_{0}\\) (a natural number) in the \\(\epsilon-\delta\\) definition of the convergence of a given sequence {\\(a_{n}\\)} for a given value of positive \\(\epsilon\\). The slider below provides a range for the choice of \\(\epsilon\\) [0.01,2] (can be extended if required), choose an \\(\epsilon\\) and get the resultant \\(n_{0}\\) for which l -\\(\epsilon\\) < \\(a_{n}\\) < l + \\(\epsilon\\), for every n >= \\(n_{0}\\), where l is a real number denoting the limit of the convergent sequence {\\(a_{n}\\)}.
+
 
 * `Gambler's Ruin Simulator`. [[APP LINK]](https://roysomjitsr.shinyapps.io/grp_simulator/)<br />
 In extension to the idea portrayed through the R package : `gamblers.ruin.gameplay`, this app demosntrates an interactive session of gameplay using the **Gambler's Ruin** approach.
