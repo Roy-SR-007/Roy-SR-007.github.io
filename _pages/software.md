@@ -26,7 +26,7 @@ Determines the sum of squares of the \\(2^{n} - 1\\) factorial effects in a \\(2
 The R Software provides a potential platform of developing interactive web applications through `R Shiny`. Following are some instances,
 
 * `Convergence of Sequence:= Epsilon-Delta Definition`. [[APP LINK]](https://roysomjitsr.shinyapps.io/seqconv/)<br />
-We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence of a sequence {\\(a_n\\)}, by determining the \\(n_{0}\\) which is a natural number and may be a function of \\(\epsilon\\), such that for n >= \\(n_{0}\\), we have the terms of the sequence to lie within (l-\\(\epsilon\\),l+\\(\epsilon\\)).
+We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence of a sequence {\\(a_n\\)}, by determining the \\(n_{0}\\) which is a natural number and may be a function of \\(\epsilon\\), such that for n >= \\(n_{0}\\), we have the terms of the sequence to lie within (\\(\alpha\\)-\\(\epsilon\\),\\(\alpha\\)+\\(\epsilon\\)), where \\(\alpha\\) is a real number denoting the limit of the sequence.
 
 * `Gambler's Ruin Simulator`. [[APP LINK]](https://roysomjitsr.shinyapps.io/grp_simulator/)<br />
 In extension to the idea portrayed through the R package : `gamblers.ruin.gameplay`, this app demosntrates an interactive session of gameplay using the **Gambler's Ruin** approach.
