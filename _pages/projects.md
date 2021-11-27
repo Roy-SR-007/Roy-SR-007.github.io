@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: An humble effort to showcase ideas!
 nav: true
-display_categories: [Research & Internship,Company Projects,R Packages]
+display_categories: [Research & Internship,Company Projects]
 horizontal: false
 ---
 <div class="projects">
