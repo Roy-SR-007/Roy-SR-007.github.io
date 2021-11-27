@@ -28,7 +28,9 @@ The R Software provides a potential platform of developing interactive web appli
 * `Convergence of Sequence:= Epsilon-Delta Definition`. [[APP LINK]](https://roysomjitsr.shinyapps.io/seqconv/)<br />
 We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence, which is as follows:<br />
 <p align="center">
+    <div class = "math">
     If for \\(l \in \mathbb{R}\\), a sequence \\(\{a_n\} \Rightarrow l\\), then \\(\forall \epsilon>0 \exists n_{0}=n(\epsilon) \in \mathbb{N}, \ni |a_n - l| < \epsilon, \forall n \geq n_{0}\\).
+    </div>
 </p>
 
 * `Gambler's Ruin Simulator`. [[APP LINK]](https://roysomjitsr.shinyapps.io/grp_simulator/)<br />
