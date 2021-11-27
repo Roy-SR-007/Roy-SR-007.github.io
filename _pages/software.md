@@ -26,22 +26,7 @@ Determines the sum of squares of the \\(2^{n} - 1\\) factorial effects in a \\(2
 The R Software provides a potential platform of developing interactive web applications through `R Shiny`. Following are some instances,
 
 * `Convergence of Sequence:= Epsilon-Delta Definition`. [[APP LINK]](https://roysomjitsr.shinyapps.io/seqconv/)<br />
-We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence, which is as follows:<br />
-
-```html
-<p align="center">
-    If for a real number l, we have \\(a_{n}\\) converging to l, we have,
-    <div class = "math">
-    \begin{equation*}
-        \forall\hspace{1mm}\epsilon>0,\exists\hspace{1mm}n_{0} = n(\epsilon) \in \mathbb{N},\ni\hspace{1mm}|a_{n} - l| < \epsilon,\forall\hpsace{1mm}n \geq n_{0} 
-    \end{equation*} 
-    </div>
-</p>
-```
-<br />
-
-This shiny app basically demonstrates the determination of \\(n_{0}\\) (a natural number) in the \\(\epsilon-\delta\\) definition of the convergence of a given sequence {\\(a_{n}\\)} for a given value of positive \\(\epsilon\\). The slider below provides a range for the choice of \\(\epsilon\\) [0.01,2] (can be extended if required), choose an \\(\epsilon\\) and get the resultant \\(n_{0}\\) for which l -\\(\epsilon\\) < \\(a_{n}\\) < l + \\(\epsilon\\), for every n >= \\(n_{0}\\), where l is a real number denoting the limit of the convergent sequence {\\(a_{n}\\)}.
-
+We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence of a sequence {\\(a_n\\)}, by determining the \\(n_{0}\\) which is a natural number and may be a function of \\(\epsilon\\), such that for n >= \\(n_{0}\\), we have the terms of the sequence to lie within (l-\\(\epsilon\\),l+\\(\epsilon\\)).
 
 * `Gambler's Ruin Simulator`. [[APP LINK]](https://roysomjitsr.shinyapps.io/grp_simulator/)<br />
 In extension to the idea portrayed through the R package : `gamblers.ruin.gameplay`, this app demosntrates an interactive session of gameplay using the **Gambler's Ruin** approach.
