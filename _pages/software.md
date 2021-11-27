@@ -34,7 +34,7 @@ We are all familiar with the concept of **convergence of a sequence**. This app 
     <div class = "math">
     \begin{equation*}
         \forall\hspace{1mm}\epsilon>0,\exists\hspace{1mm}n_{0} = n(\epsilon) \in \mathbb{N},\ni\hspace{1mm}|a_{n} - l| < \epsilon,\forall\hpsace{1mm}n \geq n_{0} 
-    \end{equation*    
+    \end{equation*} 
     </div>
 </p>
 ```
