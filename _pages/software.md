@@ -27,11 +27,17 @@ The R Software provides a potential platform of developing interactive web appli
 
 * `Convergence of Sequence:= Epsilon-Delta Definition`. [[APP LINK]](https://roysomjitsr.shinyapps.io/seqconv/)<br />
 We are all familiar with the concept of **convergence of a sequence**. This app helps to visualize the \\(\epsilon-\delta\\) definition of the convergence, which is as follows:<br />
+
+```html
 <p align="center">
+    If for a real number l, we have \\(a_{n}\\) converging to l, we have,
     <div class = "math">
-    If for \\(l \in \mathbb{R}\\), a sequence \\(\{a_n\} \Rightarrow l\\), then \\(\forall \epsilon>0 \exists n_{0}=n(\epsilon) \in \mathbb{N}, \ni |a_n - l| < \epsilon, \forall n \geq n_{0}\\).
+    \begin{equation*}
+        \forall\hspace{1mm}\epsilon>0,\exists\hspace{1mm}n_{0} = n(\epsilon) \in \mathbb{N},\ni\hspace{1mm}|a_{n} - l| < \epsilon,\forall\hpsace{1mm}n \geq n_{0} 
+    \end{equation*    
     </div>
 </p>
+```
 
 * `Gambler's Ruin Simulator`. [[APP LINK]](https://roysomjitsr.shinyapps.io/grp_simulator/)<br />
 In extension to the idea portrayed through the R package : `gamblers.ruin.gameplay`, this app demosntrates an interactive session of gameplay using the **Gambler's Ruin** approach.
