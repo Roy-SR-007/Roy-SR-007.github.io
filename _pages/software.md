@@ -2,7 +2,7 @@
 layout: page
 permalink: /software/
 title: Software
-description: Applications and Contributions : R Software
+description: Applications and Contributions - R Software
 nav: true
 ---
 
