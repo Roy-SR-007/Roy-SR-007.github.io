@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /software/
-title: R Software
+title: Software
 description: The Open Source : Applications & Contributions
 nav: true
 ---
