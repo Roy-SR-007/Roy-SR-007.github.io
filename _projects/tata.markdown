@@ -13,9 +13,9 @@ The project was undertaken by a team of candidates, with [Dr.Subhamoy Maitra, AS
 Due to NDA issues, much could not be discussed and disclosed about the insights of the project and its corresponding progress. Whereas, the project mainly touches over the following skillsets, tools, objectives and methodologies:
 
 * Data Engineering including Data Cleaning, Visualization and Crunching to extract important and significant insights about the ongoing process.
-* Basic Statistical Measures, Statistical Modeling and Computational Statistics closely related to Data Science and Machine Learning techniques.  
+* Basic Statistical Measures, Statistical Modeling, Computational Statistics, Statistical Optimization and Machine Learning Algorithms.  
 * Mathematical Formulations of the probelems and queries posed.
 * Statistical Quality Control.
 * An attempt to present an Economic avenue of the problem (specifically the process optimization).  
 
-All the above methodoogies and techniques have been applied and implemented, primarily to optimize the process in order to obtain the required levels/indices of the target variables, moreover cost reduction was also a crucial (in fact one of the most important points) kept in mind during the analysis. It was a great and successful experience to work under the Quality Control Wing of Tata Electronics, where we as a team were able to provide useful and required optimizations.
+All the above methodologies and techniques have been applied and implemented, primarily to optimize the process in order to obtain the required levels/indices of the target variables, moreover cost reduction was also crucial (in fact one of the most important points) kept in mind during the analysis. We were able to cut down on the number of experimentations and trials to be performed, which otherwise would have incurred a huge cost structure. It was a great and successful experience to work under the Quality Control Wing of Tata Electronics, where we as a team were able to provide useful and required optimizations.
