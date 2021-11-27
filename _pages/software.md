@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /R Software/
+permalink: /software/
 title: R Software
 description: The Open Source : Applications & Contributions
 nav: true
