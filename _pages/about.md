@@ -18,7 +18,7 @@ I take major interest in both theoretical as well as applied topics of Statistic
 
 ## Experiences
 
-* **Sep 23, 2021 - Present** : Research Intern in Applied Statistics Unit at ISI Kolkata, working on Mutually Unbiased Bases (MUBs) focussing on various constructions using combinatorial designs.
+* **Sep 23, 2021 - Present** : Research Intern in Applied Statistics Unit at ISI Kolkata, working on Mutually Unbiased Bases (MUBs) with a major focus on various constructions using combinatorial designs.
 
 * **May 05 - Jul 31, 2021** : Project Intern in Quality Department at Tata Electronics, involved in a project that mainly concerns to the broad avenue of Data Analytics and Process Optimization.
 
