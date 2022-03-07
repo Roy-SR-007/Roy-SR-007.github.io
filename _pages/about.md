@@ -14,11 +14,11 @@ social: true  # includes social icons at the bottom of the page
 
 I am a freshman pursuing Master of Science (MSc.) in Statistics Hons. in [Department of Statistics](https://www.caluniv.ac.in/academic/Statistics.html) at University of Calcutta. Before joining, University of Calcutta, I completed my graduation (BSc.) in Statistics Hons. from the [Department of Statistics](https://www.sxccal.edu/b-sc-statistics-department/), St.Xavier's College (Autonomous), Kolkata (2018-2021).
 
-I take major interest in both theoretical as well as applied topics of Statistics and Probability. Few of the topics on which I have worked previously (both research and practical interest) includes, *Stochastic Processes*, *Random Walks*, *Markov Chains*, *Designs of Experiment* and the broad avenue of *Computational Statistics*. Along with *Machine Learning* and *Data Science*, I also work in one of the broad domains of *Quantum Cryptography* - *Mutually Unbiased Bases (MUBs)* and related combinatorial arguments.
+I take major interest in both theoretical as well as applied topics of Statistics and Probability. Few of the topics on which I have worked previously (both research and practical interest) includes, *Stochastic Processes*, *Random Walks*, *Markov Chains*, *Designs of Experiment* and the broad avenue of *Computational Statistics*. Along with *Machine Learning* and *Data Science*, I also work in one of the broad domains of *Quantum Cryptography* - *Mutually Unbiased Bases (MUBs)*, *Mutually Unbiased Weighing Matrices (MUWMs)* and related combinatorial arguments.
 
 ## Experiences
 
-* **Sep 23, 2021 - Present** : Research Intern in Applied Statistics Unit at ISI Kolkata, working on Mutually Unbiased Bases (MUBs) with a major focus on various constructions using combinatorial designs.
+* **Sep 23, 2021 - Present** : Research Intern in Applied Statistics Unit at ISI Kolkata, working on Mutually Unbiased Bases (MUBs) & Mutually Unbiased Weighing Matrices (MUWMs) with a major focus on various constructions using combinatorial designs.
 
 * **May 05 - Jul 31, 2021** : Project Intern in Quality Department at Tata Electronics, involved in a project that mainly concerns to the broad avenue of Data Analytics and Process Optimization.
 
