@@ -16,6 +16,8 @@ I am a freshman pursuing Master of Science (MSc.) in Statistics Hons. in [Depart
 
 I take major interest in both theoretical as well as applied topics of Statistics and Probability. Few of the topics on which I have worked previously (both research and practical interest) includes, *Stochastic Processes*, *Random Walks*, *Markov Chains*, *Designs of Experiment* and the broad avenue of *Computational Statistics*. Along with *Machine Learning* and *Data Science*, I also work in one of the broad domains of *Quantum Cryptography* - *Mutually Unbiased Bases (MUBs)*, *Mutually Unbiased Weighing Matrices (MUWMs)* and related combinatorial arguments.
 
+Currently I am also interested towards the wide application of statistical theory in human development and official statisitcs, in particular, *small area estimation (SAE)* to dertermine *(multidimensional) poverty index*, *Bayesian (multiple) imputations* for data harmony, etc.
+
 ## Experiences
 
 * **Sep 23, 2021 - Present** : Research Intern in Applied Statistics Unit at ISI Kolkata, working on Mutually Unbiased Bases (MUBs) & Mutually Unbiased Weighing Matrices (MUWMs) with a major focus on various constructions using combinatorial designs.
