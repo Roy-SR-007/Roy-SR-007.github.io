@@ -23,4 +23,4 @@ I take major interest in both theoretical as well as applied topics of Statistic
 * Statistics in Interdisciplinary Research
 * Quantum Cryptography
 
-For further insights to my research works, positions, publications and experiences refer to my CV.
+For further insights to my research works, positions, publications and experiences - kindly refer to my CV, or feel free to drop in a mail.
