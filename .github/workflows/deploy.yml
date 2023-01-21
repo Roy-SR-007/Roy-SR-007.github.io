@@ -15,9 +15,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Setup Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2.0'
+        ruby-version: '3.0'
+        bundler-cache: true
     - name: Enable bundler cache
       uses: actions/cache@v2
       with:
