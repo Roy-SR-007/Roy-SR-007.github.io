@@ -19,6 +19,7 @@ I take major interest in both theoretical as well as applied topics of Statistic
 * Computational Statistics
 * Nonparametric Statistics
 * Statistical Inference
+* Machine Learning and Data Science
 * Quantum Cryptography
 
 For further insights to my research works, positions, publications and experiences refer to my CV.
