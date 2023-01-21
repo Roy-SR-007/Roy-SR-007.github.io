@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: An humble effort to showcase ideas!
-nav: true
+nav: false
 display_categories: [Research & Internship,Company Projects]
 horizontal: false
 ---
