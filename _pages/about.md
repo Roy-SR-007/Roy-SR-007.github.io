@@ -24,3 +24,9 @@ I take major interest in both theoretical as well as applied topics of Statistic
 * Quantum Cryptography
 
 For further insights to my research works, positions, publications and experiences - kindly refer to my CV, or feel free to drop in a mail.
+
+## Ongoing Collaborations and Research Work
+
+* As a part of my Master's Thesis, I am working under the guidance of Dr. Partha Lahiri, Department of Mathematics, University of Maryland, USA - addressing non-response in survey data using Imputation. As an application we broadly relate our work to Multidimensional Poverty Measurements - comparing resuts under complete-case and imputed data.
+
+* As an extension to my published paper on Mutually Unbiased Bases (MUBs), offering an heuristic appoach to find approximate versions mainly using Dimension Reduction Techniques and Machine Learning Algorithms (steepest-ascent kind of search) - this ongoing work is under Dr. Subhamoy Maitra, ASU, Indian Statistical Institute, Kolkata - using combinatorial designs for (Almost Perfect) MUBs that are sparse.
