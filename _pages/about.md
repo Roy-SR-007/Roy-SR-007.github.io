@@ -5,7 +5,7 @@ permalink: /
 description: MSc. Statistics @University of Calcutta || Research Intern @ISI KOLKATA
 profile:
   align: right
-  image: Profile_Pic.jpeg
+  image: 
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
