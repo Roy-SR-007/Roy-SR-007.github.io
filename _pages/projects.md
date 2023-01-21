@@ -5,7 +5,7 @@ permalink: /projects/
 description: An humble effort to showcase ideas!
 nav: false
 display_categories: [Research & Internship,Company Projects]
-horizontal: false
+horizontal: true
 ---
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
