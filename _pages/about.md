@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: MSc. Statistics @University of Calcutta || Research Intern @ISI KOLKATA
+description: MSc. Statistics @University of Calcutta || Research Intern @ISI KOLKATA and @IISER KOLKATA
 profile:
   align: right
   image: 
