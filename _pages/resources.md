@@ -17,3 +17,7 @@ This page comprises of some notes on Master's level coursework in Statistics and
 * [Asymptotic Inference (Cauchy MLE) and Bayesian Inference (MCMC, Acceptance-Rejection Sampling and Gibbs Sampling)](https://drive.google.com/file/d/1Sc_5-d3e2DRakKbNvtxlDmAQ2MR6Hc1f/view?usp=sharing)
 * [Weibull MLE and Symmetric Metropolis Hastings Algorithm](https://drive.google.com/file/d/12bqfKRobEqRS1N5K22cu8g_1B8detWfG/view?usp=sharing)
 * [Generalized Linear Models (GLM) - An Enigma by BG](https://drive.google.com/file/d/1zbI4_EO7Q49t97HNz13nD5Tx0eFHELao/view?usp=sharing)
+* [Modelling Zero Inflated Data](https://drive.google.com/file/d/1_8FhDiZTrXNhmPtKrBZ9XC0gMqYX6R8S/view?usp=sharing)
+* [Some Notes on Applied Multivariate Analysis](https://drive.google.com/file/d/1ub2ledZX4EGgKyIC5aLPhliVWGO7ci6X/view?usp=sharing)
+* [Insights to Minimax and Bayes Decision Rules (Decision Theory)](https://drive.google.com/file/d/1e_wsLwp4LcccIkeapArVLdwVF46YgtIl/view?usp=sharing)
+* [Some Notes on Survival Analysis (Practicals)](https://drive.google.com/file/d/1wyHuY-pBEI_z_1-xNn0kEUVfseVofe3p/view?usp=sharing)
