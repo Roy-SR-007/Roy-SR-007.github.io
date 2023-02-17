@@ -24,3 +24,4 @@ This page comprises of some notes on Master's level coursework in Statistics and
 * [Some Notes on Applied Multivariate Analysis](https://drive.google.com/file/d/1ub2ledZX4EGgKyIC5aLPhliVWGO7ci6X/view?usp=sharing)
 * [Insights to Minimax and Bayes Decision Rules (Decision Theory)](https://drive.google.com/file/d/1e_wsLwp4LcccIkeapArVLdwVF46YgtIl/view?usp=sharing)
 * [Some Notes on Survival Analysis (Practicals)](https://drive.google.com/file/d/1wyHuY-pBEI_z_1-xNn0kEUVfseVofe3p/view?usp=sharing)
+* [On Nonparametric Statistics (Jackknife and Bootstrap)](https://drive.google.com/file/d/1GNxPzxBrz8saVJFo6tZxBLCQlqrRowT0/view?usp=sharing)
