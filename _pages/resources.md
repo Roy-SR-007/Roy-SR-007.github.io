@@ -9,9 +9,8 @@ nav: true
 This page comprises of some notes on Master's level coursework in Statistics and related topics.
 
 ---
-* [Stochastic Processes (Ongoing)](https://drive.google.com/file/d/17ckbol3WkAKdRFmSWBOKJYuPgVUmaP3V/view?usp=sharing)
----
 
+* [Stochastic Processes (Ongoing)](https://drive.google.com/file/d/17ckbol3WkAKdRFmSWBOKJYuPgVUmaP3V/view?usp=sharing)
 * [Analysis - I (Extras)](https://drive.google.com/file/d/1lBEGMhv5M0CsZhbnXPhDeXgLus37PaAF/view?usp=sharing)
 * [On Inverses, Generalized Inverses, Matrix Decompositions and Lowner Order](https://drive.google.com/file/d/1NmOmllKCNlf5WvvuxQlc0CxR9cBW81Jq/view?usp=sharing)
 * [Gauss Markov Model: Estimation and Inference with ANOVA](https://drive.google.com/file/d/1q4Ou9LZ1pooJqEIOnCefV1wCPzTdpHJ6/view?usp=sharing)
