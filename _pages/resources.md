@@ -8,7 +8,7 @@ nav: true
 
 # Scibes of Master's Level Coursework
 
-* [Longitudinal Data Analysis](https://cvws.icloud-content.com/B/AZCVqP-d00URA27Srl3EVKXJVOHAAR-Vav9zGKyqfJtIDjrotLWfz4dg/Longitudinal+Data+Analysis.pdf?o=Arzbx9pogAXySksJutkJmSwyhyFSkv_DKDr3RqbuhtXX&v=1&x=3&a=CAogxGfFM0ekMvR-QBN1VHMyGTXQhtlZ_5YFo-80q5d-KuQSbxCCntnO8jAYgvu00PIwIgEAUgTJVOHAWgSfz4dgaicABgOTt53AZfr2nG5-DmyvkecSdmEeftvkHFE-PyMShFWVTBzdQhdyJ20ET_7bH5Cyw74hp-ZHQZZ8zAz-8q581jJROaronvcxkMkd-vAaXg&e=1680037723&fl=&r=192c8dfa-360c-47ea-862b-a93c72eb20d3-1&k=AEhWUIA_dRSfI4-sKX0Org&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=68&s=6JqV5ZLJKQtPnQmI1raEvSCVOw8&cd=i)
+* [Longitudinal Data Analysis](https://drive.google.com/file/d/15VQGY4o12OgiiR9ICCE6YBd3WQlZ9tNg/view?usp=sharing)
 * [James-Stein Shrinkage Estimator of the Location Parameter in Multivariate Normal Setup: Visualization](https://drive.google.com/file/d/1pNszdwe51NUTTUlnHBwfcKteuma-wTeJ/view?usp=sharing)
 * [Multiple Hypothesis Testing (Ongoing, few sections unaddressed)](https://drive.google.com/file/d/1-3XOy_4zOCJPpHXd2B1axniIITGrJc2A/view?usp=sharing)
 * [Stochastic Processes (Ongoing)](https://drive.google.com/file/d/17ckbol3WkAKdRFmSWBOKJYuPgVUmaP3V/view?usp=sharing)
