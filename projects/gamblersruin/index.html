@@ -11,7 +11,7 @@
   Somjit  Roy
 
 
-  | blog
+  | The Gambler's Ruin Problem
 
 </title>
 <meta name="description" content="Official website of Somjit Roy
@@ -23,8 +23,8 @@
 " />
 <meta property="og:type" content="object" />
 <meta property="og:title" content="" />
-<meta property="og:url" content="https://roy-sr-007.github.io//blog/index.html" />
-<meta property="og:description" content="blog" />
+<meta property="og:url" content="https://roy-sr-007.github.io//projects/gamblersruin/" />
+<meta property="og:description" content="The Gambler's Ruin Problem" />
 <meta property="og:image" content="/assets/img/Profile_Pic.jpeg" />
 
 
@@ -51,7 +51,7 @@
 
 <link rel="icon" href="/assets/img/ju-favicon.png">
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/gamblersruin/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -141,8 +141,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/publications/">
                 Publications
@@ -197,18 +195,46 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
-
-
-  <ul class="post-list">
+  <header class="post-header">
+    <h1 class="post-title">The Gambler's Ruin Problem</h1>
+    <p class="post-description">Introducing Games of Chance 
     
-  </ul>
+      (2020 - 2021)
+    
+    </p>
 
-  
+  </header>
 
+  <article>
+    <p>The research was completed under the guidance of <a href="https://www.sxccal.edu/wp-content/uploads/2021/02/Pallabi-Ghosh.pdf">Prof.Pallabi Ghosh, Assistant Professor, Department of Statistics, St.Xavier’s College, Kolkata</a> and <a href="https://www.sxccal.edu/wp-content/uploads/2020/01/DurbaBhattacharya.pdf">Dr.Durba Bhattacharya, HOD, Department of Statistics, St.Xavier’s College, Kolkata</a>. The topic and the idea to research in the established avenue of Applied Probability was suggested by <a href="https://www.sxccal.edu/wp-content/uploads/2020/01/AyanChandra.pdf">Dr.Ayan Chandra, Assistant Professor, Department of Statistics, St.Xavier’s College, Kolkata</a>.</p>
+
+<p>Considering the general problem, which is as follows,</p>
+
+<blockquote>
+  <p><em>Let there be two Gamblers (players) A and B. Player A starts the game with an initial amount of Rs.\(n_1\) and Player B starts the game with an initial amount of Rs.\(n_2\), such that the total amount of money available in the game is Rs.(\(n_1 + n_2\)). Suppose the probability of winning a particular round of the game for A is ’p’ and that for B is ’q = 1-p’. When A wins a round, Rs.1 is received by A from B and when B wins, Rs.1 is received by B from A. The game stops when one of the player goes bankrupt and
+the other wins all the money, i.e., Rs.(\(n_1 + n_2\)). Then what is the probability of A or B winning the game?</em></p>
+</blockquote>
+
+<p>The solution of the above problem statement has been approached on two different levels, i.e., <a href="https://onlinelibrary.wiley.com/doi/10.1002/sim.8086">Simulating the solution</a> &amp; <a href="https://www.cl.cam.ac.uk/teaching/2003/Probability/prob07.pdf">Solving by Difference Equations</a>. Mainly the concept of <a href="https://www4.stat.ncsu.edu/~davidian/st810a/simulation_handout.pdf">Monte - Carlo Simulations</a> have been used for majority of the simulations in the paper. I would like to provide the mathematical and probabilistic expressions as solution to the above problem statement, which is as follows:</p>
+
+<blockquote>
+  <p>The probability that a gambler will win a game, played under the gambler’s ruin setup, when starting initially with Rs.i (say), is</p>
+</blockquote>
+
+\[\mathbb{P}_i = \begin{cases}
+\frac{1-(\frac{1-p}{p})^i}{1-(\frac{1-p}{p})^(n_1+n_2)}, p \neq 1-p \\
+\frac{i}{n_1+n_2}, p = \frac{1}{2}
+\end{cases}\]
+
+<p>Another major conundrum under the topic addressed is the <em>Expected Duration until Ruin</em>. Major simulations have been done to come up with a solution, along with a concrete mathematical point of view, which includes the usage of <a href="https://advancesindifferenceequations.springeropen.com/articles/10.1186/s13662-016-0839-x">Non-homogenous Linear Difference Equations</a>.</p>
+
+<p>The major concepts and fine ideas to look out for while reading the paper is <a href="https://www.cs.princeton.edu/courses/archive/fall13/cos521/lecnotes/lec12.pdf">Modeling Gambler’s Ruin in terms of Random Walks and Markov Chains</a>, along with the application of <a href="https://en.wikipedia.org/wiki/Transition_matrix">Higher Order Transitional Matrices</a> for visualizing the convergence of long-run probabilities of winning and losing a game, that is being played under the gambler’s ruin setup.</p>
+
+<p>In addition to the classic approach of solving the most celebrated Gambler’s Ruin Problem, the paper also lists down a wide array of applications to the problem on an inter-discplinary level.</p>
+
+<p>An <a href="https://cran.r-project.org/web/packages/gamblers.ruin.gameplay/index.html">R pacakge: gamblers.ruin.gameplay</a> has been developed, along with <a href="https://roysomjitsr.shinyapps.io/grp_simulator/">An interactive web application: Gambler’s Ruin Simulator</a>. Feel free to check those out along with the <a href="https://somjitroysr.netlify.app/media/Somjit%20Roy_402_HSTDS6043D.pdf">paper</a>.</p>
+
+  </article>
 
 </div>
 
