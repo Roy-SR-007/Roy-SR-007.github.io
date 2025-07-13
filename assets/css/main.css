@@ -76,7 +76,7 @@ body.sticky-bottom-footer {
   position: relative;
   width: 200px;      /* adjust width */
   height: 250px;     /* adjust height for rectangle */
-  overflow: hidden;
+  overflow: visible !important;
   /* optional: add a subtle shadow */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -99,7 +99,7 @@ body.sticky-bottom-footer {
   color: #fff;
   text-align: center;
   font-weight: 500;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
