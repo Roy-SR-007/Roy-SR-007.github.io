@@ -72,6 +72,45 @@ body.sticky-bottom-footer {
   width: 100%;
 }
 
+.profile-container {
+  position: relative;
+  width: 200px;      /* adjust width */
+  height: 250px;     /* adjust height for rectangle */
+  overflow: hidden;
+  /* optional: add a subtle shadow */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-container .profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop-to-fill your container */
+  border-radius: 0;  /* remove the circle */
+  transition: transform 0.3s ease;
+}
+
+.profile-container .profile-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effects */
+.profile-container:hover .profile-img {
+  transform: scale(1.05);
+}
+.profile-container:hover .profile-caption {
+  opacity: 1;
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
