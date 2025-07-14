@@ -46,10 +46,10 @@
 
 <!-- Styles -->
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+<!--<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">-->
 
 
-<link rel="icon" href="/assets/img/ju-favicon.png">
+<link rel="icon" href="/assets/img/CMYK-TAM-MaroonBox.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="canonical" href="/software/">
 
@@ -145,12 +145,19 @@
           
           <li class="nav-item ">
               <a class="nav-link" href="/publications/">
-                Publications
+                Research
                 
               </a>
           </li>          
           
-          
+          <li class="nav-item active">
+              <a class="nav-link" href="/software/">
+                Software
+                
+                <span class="sr-only">(current)</span>
+                
+              </a>
+          </li>      
           
           <li class="nav-item ">
               <a class="nav-link" href="/resources/">
@@ -160,28 +167,13 @@
           </li>          
           
           
-          
-          <li class="nav-item active">
-              <a class="nav-link" href="/software/">
-                Software
-                
-                <span class="sr-only">(current)</span>
-                
-              </a>
-          </li>          
-          
-          
-          
-          
-          
-          
           <!-- <li class="nav-item">
             <a class="nav-link" href="https://bit.ly/2PX4P0z" target="_blank">
               Résumé
             </a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="https://drive.google.com/file/d/1OYMouMliclWgZLo1ium8heKLBjFf-Lt-/view?usp=sharing" target="_blank">
+            <a class="nav-link" href="/assets/resume.pdf" target="_blank">
               Vitaè
             </a>
           </li>
@@ -196,77 +188,75 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+  <div class="container mt-5">
+  <div class="post">
 
   <header class="post-header">
     <h1 class="post-title">Software</h1>
-    <p class="post-description">Applications and Contributions - R Software 
+    <!--<p class="post-description">Contributions to both Theory and Software! 
     
-    </p>
+    </p>-->
 
   </header>
 
   <article>
-    <p>This page is dedicated to showcase the applications that I have been able to produce using the open source software : R, and also listing down some of my additions to the network of R packages.</p>
+    <div class="publications">
 
-<h3 id="r-packages">R Packages</h3>
-
-<p>In view of the results obtained during a (research) project or certain applications to theory, a source of documenting those is to wrap them in the form packages in R, for extensive use and implementation at a global level.</p>
-
-<ul>
+<h2 class="year">2025</h2>
+  <ol class="bibliography">
   <li>
-    <p><code class="language-plaintext highlighter-rouge">gamblers.ruin.gameplay</code>. <a href="https://cran.r-project.org/web/packages/gamblers.ruin.gameplay/index.html">[CRAN LINK]</a><br />
-Simulates a gambling game under the gambler’s ruin setup, after asking for the money you have and the money you want to win, along with your win probability in each round of the game.<br />
-The gambler’s ruin problem is a classic example, which illustrates the application of <strong>one-dimensional Random Walks</strong> - a <strong>Stochastic Process</strong>. Simulation of a gambling game under the gambler’s ruin setup concerns to a gambler starting the game with an initial capital, where the probability of winning a particular round is ’p’. If the gambler wins the round, then 1 unit of money is added to the gambler’s existing capital and if the gambler loses a round, then 1 unit of money is deducted from the gambler’s existing capital. The game stops when the gambler reaches his desired amount of money or gets totally bankrupted (ruined), these two points are known as the absorbed states of the
-game, or equivalently absorbed states in the one-dimensional random walk. <br />
-The function <code class="language-plaintext highlighter-rouge">grp.gameplay()</code> simulates the above described game, where the simulation runs until one of the absorbed states are reached, i.e., simulating the game until the gambler reaches to 0 money, getting ruined or wins the desired or targeted amount, eventually winning the game. User inputs are accepted, which includes the initial amount of money with which the gambler enters the game, the probability ’p’ of winning each round of the game and lastly the amount of money, which the gambler wishes to earn from this game being played.The function facilitates majorly in visualizing the game trajectory of the gambler, along with the overall probability of the gambler winning the entire game.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">YatesAlgo.FactorialExp.SR</code>. <a href="https://cran.r-project.org/web/packages/YatesAlgo.FactorialExp.SR/index.html">[CRAN LINK]</a><br />
-Determines the sum of squares of the \(2^{n} - 1\) factorial effects in a \(2^{n}\) factorial experiment using Yates’ algorithm. It majorly provides a function to implement <strong>Yates’ Algorithm</strong> to determine the factorial effects in a factorial experiment (in this case \(2^{n}\)), where the factorial experiment can be carried out using any of the designs including <strong>CRD</strong>, <strong>RBD</strong> or <strong>LSD</strong>.</p>
-  </li>
-</ul>
-
-<h3 id="r-shiny-apps">R Shiny Apps</h3>
-
-<p>The R Software provides a potential platform of developing interactive web applications through <code class="language-plaintext highlighter-rouge">R Shiny</code>. Following are some instances,</p>
-
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">Convergence of Sequence:= Epsilon-Delta Definition</code>. <a href="https://roysomjitsr.shinyapps.io/seqconv/">[APP LINK]</a><br />
-We are all familiar with the concept of <strong>convergence of a sequence</strong>. This app helps to visualize the \(\epsilon-\delta\) definition of the convergence of a sequence {\(a_n\)}, by determining the \(n_{0}\) which is a natural number and may be a function of \(\epsilon\), such that for all n &gt;= \(n_{0}\), we have the terms of the sequence to lie within (\(\alpha\)-\(\epsilon\),\(\alpha\)+\(\epsilon\)), where \(\alpha\) is a real number denoting the limit of the sequence.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">Gambler's Ruin Simulator</code>. <a href="https://roysomjitsr.shinyapps.io/grp_simulator/">[APP LINK]</a><br />
-In extension to the idea portrayed through the R package : <code class="language-plaintext highlighter-rouge">gamblers.ruin.gameplay</code>, this app demosntrates an interactive session of gameplay using the <strong>Gambler’s Ruin</strong> approach.</p>
-  </li>
-</ul>
-
-  </article>
-
-</div>
-
+  <div class="row">
+    <div class="col-sm-2 abbr">
+      <abbr class="badge">bayesestdft</abbr>
     </div>
+
+    <div id="bayesestdft" class="col-sm-8">
+      <div class="title">
+        bayesestdft: Estimating the Degrees of Freedom of the Student's t-Distribution under a Bayesian Framework
+      </div>
+      <div class="author">
+        <em>Somjit Roy</em> and Se Yoon Lee.
+      </div>
+
+      <div class="periodical">
+        <!-- CRAN link -->
+        <a
+          href="https://cran.r-project.org/web/packages/bayesestdft/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <em>CRAN</em>
+        </a>, 
+        <!-- GitHub icon link -->
+        <a
+          href="https://github.com/Roy-SR-007/bayesestdft"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="margin-left:8px;"
+        >
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>.
+      </div>
+    </div>
+  </div>
+</li>
+
+</ol>
+</div>
+</article>
+</div>
+</div>
 
     <!-- Footer -->
 
     
 <footer class="fixed-bottom">
   <div class="container mt-0" style="text-align: center;">
-    &copy; Copyright 2023 Somjit  Roy.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme and<a href="https://nath.p3jit.com/" target="_blank"> Pritthijit Nath</a>. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a>
-
-    
-    
-    Last updated: April 05, 2023.
-    
+    &copy; Copyright 2025 Somjit  Roy.
+    <!--Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme and<a href="https://nath.p3jit.com/" target="_blank"> Pritthijit Nath</a>. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a>-->
   </div>
 </footer>
-
-
-    
-  </body> 
+</body> 
 
   <!-- SplideJS -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js" crossorigin="anonymous"></script>
