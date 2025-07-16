@@ -1,95 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://roy-sr-007.github.io//news/announcement_8/</loc>
-<lastmod>2020-01-01T20:11:00+00:00</lastmod>
+  <loc>https://roy-sr-007.github.io/</loc>
+  <lastmod>2025-07-14T07:22:45+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://roy-sr-007.github.io//news/announcement_7/</loc>
-<lastmod>2020-02-02T20:11:00+00:00</lastmod>
+  <loc>https://roy-sr-007.github.io/publications/</loc>
+  <lastmod>2025-07-14T07:22:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roy-sr-007.github.io//news/announcement_4/</loc>
-<lastmod>2021-04-28T20:11:00+00:00</lastmod>
+  <loc>https://roy-sr-007.github.io/software/</loc>
+  <lastmod>2025-07-14T07:22:46+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roy-sr-007.github.io//news/announcement_5/</loc>
-<lastmod>2021-05-12T20:11:00+00:00</lastmod>
+  <loc>https://roy-sr-007.github.io/resources/</loc>
+  <lastmod>2025-07-14T07:22:46+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roy-sr-007.github.io//news/announcement_2/</loc>
-<lastmod>2021-09-18T20:11:00+00:00</lastmod>
+  <loc>https://roy-sr-007.github.io/assets/resume.pdf</loc>
+  <lastmod>2025-07-14T07:22:45+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<url>
-<loc>https://roy-sr-007.github.io//news/announcement_1/</loc>
-<lastmod>2021-11-21T20:11:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//news/announcement_9/</loc>
-<lastmod>2022-02-12T20:11:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//news/announcement_11/</loc>
-<lastmod>2022-04-20T20:11:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//news/announcement_10/</loc>
-<lastmod>2022-04-25T20:11:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//news/announcement_12/</loc>
-<lastmod>2022-08-20T20:11:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//projects/age/</loc>
-<lastmod>2023-04-05T22:20:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//projects/covid/</loc>
-<lastmod>2023-04-05T22:20:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//projects/gamblersruin/</loc>
-<lastmod>2023-04-05T22:20:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//projects/tata/</loc>
-<lastmod>2023-04-05T22:20:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//</loc>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//publications/</loc>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//resources/</loc>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//software/</loc>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//assets/pdf/nath2021long.pdf</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//assets/pdf/roy2020CNBP.pdf</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//assets/pdf/roy2020OPTCNBP.pdf</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//assets/pdf/roy2021GRP.pdf</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//assets/pdf/roy2021YATESALGO.pdf</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
-<url>
-<loc>https://roy-sr-007.github.io//google97800b8cc993c033.html</loc>
-<lastmod>2023-04-05T22:20:18+00:00</lastmod>
-</url>
+
+
 </urlset>
