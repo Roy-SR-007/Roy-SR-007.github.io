@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://roy-sr-007.github.io/sitemap.xml
+Sitemap: https://roy-sr-007.github.io/sitemap-website.xml
