@@ -1,7 +1,7 @@
 # Personal Homepage on GitHub Pages
 
 
-This repository hosts the source code and content for my personal website, served via **GitHub Pages** from the `gh-pages` branch with url: [https://roy-sr-007.github.io//](https://roy-sr-007.github.io).
+This repository hosts the source code and content for my personal website, served via **GitHub Pages** from the `gh-pages` branch with url: [https://roy-sr-007.github.io](https://roy-sr-007.github.io).
 
 ---
 
