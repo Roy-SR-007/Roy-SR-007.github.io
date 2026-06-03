@@ -88,7 +88,7 @@ body.dark .post-content{
 .site-header,
 .header .nav{
   background: var(--nk-paper) !important;
-  border-bottom: 1px solid var(--nk-line) !important;
+  border-bottom: none !important;
   box-shadow: none !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
@@ -148,12 +148,12 @@ body.dark #footer{
 }
 
 /* Animated underline layer (solid) */
-.profile-mode a:not(:has(svg)):not(.button)::after,
-.profile a:not(:has(svg)):not(.button)::after,
-.home-info a:not(:has(svg)):not(.button)::after,
-#profile a:not(:has(svg)):not(.button)::after,
-.post-content a:not(:has(svg)):not(.button)::after,
-.post-entry a:not(:has(svg)):not(.button)::after{
+.profile-mode a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+.profile a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+.home-info a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+#profile a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+.post-content a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+.post-entry a:not(:has(svg)):not(.button):not(.rk-pill)::after{
   content:"";
   position:absolute;
   left:0;
@@ -167,31 +167,31 @@ body.dark #footer{
   pointer-events:none;
 }
 
-body.dark .profile-mode a:not(:has(svg)):not(.button)::after,
-body.dark .profile a:not(:has(svg)):not(.button)::after,
-body.dark .home-info a:not(:has(svg)):not(.button)::after,
-body.dark #profile a:not(:has(svg)):not(.button)::after,
-body.dark .post-content a:not(:has(svg)):not(.button)::after,
-body.dark .post-entry a:not(:has(svg)):not(.button)::after{
+body.dark .profile-mode a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+body.dark .profile a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+body.dark .home-info a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+body.dark #profile a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+body.dark .post-content a:not(:has(svg)):not(.button):not(.rk-pill)::after,
+body.dark .post-entry a:not(:has(svg)):not(.button):not(.rk-pill)::after{
   background:#ddd8d8;
 }
 
 /* Hover: show animated underline */
-.profile-mode a:not(:has(svg)):not(.button):hover,
-.profile a:not(:has(svg)):not(.button):hover,
-.home-info a:not(:has(svg)):not(.button):hover,
-#profile a:not(:has(svg)):not(.button):hover,
-.post-content a:not(:has(svg)):not(.button):hover,
-.post-entry a:not(:has(svg)):not(.button):hover{
+.profile-mode a:not(:has(svg)):not(.button):not(.rk-pill):hover,
+.profile a:not(:has(svg)):not(.button):not(.rk-pill):hover,
+.home-info a:not(:has(svg)):not(.button):not(.rk-pill):hover,
+#profile a:not(:has(svg)):not(.button):not(.rk-pill):hover,
+.post-content a:not(:has(svg)):not(.button):not(.rk-pill):hover,
+.post-entry a:not(:has(svg)):not(.button):not(.rk-pill):hover{
   color: var(--nk-accent);
   border-bottom-color: color-mix(in srgb, var(--nk-accent) 22%, transparent);
 }
-.profile-mode a:not(:has(svg)):not(.button):hover::after,
-.profile a:not(:has(svg)):not(.button):hover::after,
-.home-info a:not(:has(svg)):not(.button):hover::after,
-#profile a:not(:has(svg)):not(.button):hover::after,
-.post-content a:not(:has(svg)):not(.button):hover::after,
-.post-entry a:not(:has(svg)):not(.button):hover::after{
+.profile-mode a:not(:has(svg)):not(.button):not(.rk-pill):hover::after,
+.profile a:not(:has(svg)):not(.button):not(.rk-pill):hover::after,
+.home-info a:not(:has(svg)):not(.button):not(.rk-pill):hover::after,
+#profile a:not(:has(svg)):not(.button):not(.rk-pill):hover::after,
+.post-content a:not(:has(svg)):not(.button):not(.rk-pill):hover::after,
+.post-entry a:not(:has(svg)):not(.button):not(.rk-pill):hover::after{
   transform: scaleX(1);
 }
 
@@ -283,6 +283,8 @@ body.dark .social-icons a:has(svg):hover svg{
   border-radius: 999px !important;
   box-shadow: none !important;
   transition: transform .14s ease, border-color .18s ease, background .18s ease, color .18s ease;
+  overflow: hidden !important;
+  position: relative !important;
 }
 .button:hover,
 .btn:hover,
@@ -615,7 +617,6 @@ html:has(head link[rel="canonical"][href$="/contact/"]) .post-single .post-conte
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  
   body.dark .rk-details[open] > summary{
     background: color-mix(in srgb, #ddd8d8 10%, transparent);
     border-color: color-mix(in srgb, #ddd8d8 35%, transparent);
@@ -623,52 +624,182 @@ html:has(head link[rel="canonical"][href$="/contact/"]) .post-single .post-conte
   }
   
   /* Attached panel */
+  /* Base open-panel reset */
   .rk-details[open] .rk-abstract,
-  .rk-details[open] .rk-awards{
-    display:block;
-    width:100%;
-    box-sizing:border-box;
-    margin:0;
-    padding:.9rem 1rem;
-  
-    background: var(--rk-card-strong);
-    border: 1px solid color-mix(in srgb, var(--rk-accent) 35%, transparent);
+  .rk-details[open] .rk-awards {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
     border-top: none;
-  
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  
-    color: var(--rk-muted);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
-  
-  body.dark .rk-details[open] .rk-abstract,
-  body.dark .rk-details[open] .rk-awards{
-    border-color: color-mix(in srgb, #ddd8d8 26%, transparent);
-    color: var(--rk-muted);
+
+  /* Abstract panel — indigo left rail + serif text */
+  .rk-details:has(.rk-abstract)[open] .rk-abstract {
+    padding: 1.3rem 1.4rem 1.3rem 1.5rem !important;
+    background: color-mix(in srgb, #6366f1 4%, var(--rk-card-strong));
+    border: 1px solid color-mix(in srgb, #6366f1 22%, transparent);
+    border-top: none;
+    border-left: 3px solid color-mix(in srgb, #6366f1 55%, transparent);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: .9rem;
+    line-height: 1.85;
+    color: var(--rk-text);
+    box-shadow: inset 0 -1px 0 color-mix(in srgb, #6366f1 10%, transparent);
   }
-  
-  /* External pill icon (keep your style) */
-  .rk-pill.rk-external{
+  body.dark .rk-details:has(.rk-abstract)[open] .rk-abstract {
+    background: color-mix(in srgb, #818cf8 6%, var(--rk-card-strong));
+    border-color: color-mix(in srgb, #818cf8 22%, transparent);
+    border-left-color: color-mix(in srgb, #818cf8 50%, transparent);
+  }
+
+  /* Awards panel — amber left rail + custom bullets */
+  .rk-details:has(.rk-awards)[open] .rk-awards {
+    padding: 1rem 1.4rem 1rem 1.5rem !important;
+    background: color-mix(in srgb, #f59e0b 5%, var(--rk-card-strong));
+    border: 1px solid color-mix(in srgb, #f59e0b 28%, transparent);
+    border-top: none;
+    border-left: 3px solid color-mix(in srgb, #f59e0b 65%, transparent);
+    list-style: none !important;
+    box-shadow: inset 0 -1px 0 color-mix(in srgb, #f59e0b 10%, transparent);
+  }
+  body.dark .rk-details:has(.rk-awards)[open] .rk-awards {
+    background: color-mix(in srgb, #fcd34d 6%, var(--rk-card-strong));
+    border-color: color-mix(in srgb, #fcd34d 22%, transparent);
+    border-left-color: color-mix(in srgb, #fcd34d 55%, transparent);
+  }
+
+  /* Award list items */
+  .rk-awards { list-style: none !important; padding: 0 !important; }
+  .rk-awards li {
     position: relative;
+    padding-left: 1.3rem;
+    margin: .45rem 0;
+    line-height: 1.55;
+    font-size: .86rem;
   }
+  .rk-awards li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    top: .12em;
+    font-size: .55em;
+    color: #d97706;
+  }
+  body.dark .rk-awards li::before { color: #fcd34d; }
   
   .rk-pill.rk-external::after{
-    content:"";
-    display:inline-block;
-    width:1em;
-    height:1em;
-    margin-left:.2em;
-    background: currentColor;
-    mask: url('data:image/svg+xml;utf8,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>') no-repeat center / contain;
-    -webkit-mask: url('data:image/svg+xml;utf8,\<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>') no-repeat center / contain;
+    content: none !important;
+    display: none !important;
   }
   
   /* Typography inside panels */
   .rk-abstract, .rk-awards{
-    font-size: .88rem;
-    line-height: 1.45;
+    font-size: .86rem;
+    line-height: 1.72;
   }
   .rk-abstract p, .rk-awards li{ margin:.4rem 0; }
+
+  /* Rotating chevron on expandable pills */
+  .rk-details > summary::after {
+    content: "›";
+    display: inline-block;
+    margin-left: .32rem;
+    font-size: 1em;
+    line-height: 1;
+    transform: rotate(90deg);
+    transition: transform .22s ease;
+    opacity: .55;
+  }
+  .rk-details[open] > summary::after {
+    transform: rotate(-90deg);
+    opacity: .85;
+  }
+
+  /* Abstract open — indigo tint */
+  .rk-details:has(.rk-abstract)[open] > summary {
+    background: color-mix(in srgb, #6366f1 10%, transparent) !important;
+    border-color: color-mix(in srgb, #6366f1 38%, transparent) !important;
+    color: #4338ca !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  body.dark .rk-details:has(.rk-abstract)[open] > summary {
+    background: color-mix(in srgb, #818cf8 12%, transparent) !important;
+    border-color: color-mix(in srgb, #818cf8 32%, transparent) !important;
+    color: #a5b4fc !important;
+  }
+
+  /* Awards open — amber tint */
+  .rk-details:has(.rk-awards)[open] > summary {
+    background: color-mix(in srgb, #f59e0b 10%, transparent) !important;
+    border-color: color-mix(in srgb, #f59e0b 38%, transparent) !important;
+    color: #92400e !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  body.dark .rk-details:has(.rk-awards)[open] > summary {
+    background: color-mix(in srgb, #fcd34d 12%, transparent) !important;
+    border-color: color-mix(in srgb, #fcd34d 30%, transparent) !important;
+    color: #fcd34d !important;
+  }
+
+  /* Awards panel — amber border */
+  .rk-details:has(.rk-awards)[open] .rk-awards {
+    border-color: color-mix(in srgb, #f59e0b 30%, transparent) !important;
+  }
+
+  /* arXiv / Journal / Proceedings — filled solid pill */
+  .rk-pill.rk-external {
+    background: var(--rk-accent) !important;
+    color: #fff !important;
+    border-color: var(--rk-accent) !important;
+    font-weight: 700;
+    letter-spacing: .02em;
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--rk-accent) 28%, transparent);
+    transition: background .18s ease, transform .16s ease, box-shadow .16s ease !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .rk-pill.rk-external:hover {
+    background: color-mix(in srgb, var(--rk-accent) 82%, #000) !important;
+    border-color: color-mix(in srgb, var(--rk-accent) 82%, #000) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 14px color-mix(in srgb, var(--rk-accent) 35%, transparent) !important;
+  }
+  body.dark .rk-pill.rk-external {
+    background: color-mix(in srgb, #ddd8d8 90%, transparent) !important;
+    color: #0c0f14 !important;
+    border-color: #ddd8d8 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  }
+  body.dark .rk-pill.rk-external:hover {
+    background: #fff !important;
+    border-color: #fff !important;
+  }
+
+  /* Panel expand animation — scale from top + fade */
+  @keyframes rk-panel-in {
+    from {
+      opacity: 0;
+      transform: scaleY(0.88) translateY(-8px);
+      transform-origin: top center;
+    }
+    60% { opacity: 1; }
+    to  {
+      opacity: 1;
+      transform: scaleY(1) translateY(0);
+      transform-origin: top center;
+    }
+  }
+  .rk-details[open] .rk-abstract,
+  .rk-details[open] .rk-awards {
+    animation: rk-panel-in .28s cubic-bezier(.22,.68,0,1.2) both;
+  }
   
   /* Responsive */
   @media (max-width:720px){
@@ -971,6 +1102,90 @@ body.dark .post-single .post-title::after{
     color-mix(in srgb, #ddd8d8 18%, transparent)
   );
 }
+/* Remove magazine rule on research, awards, software, news pages */
+html:has(head link[rel="canonical"][href$="/research/"]) .post-single .post-title::after,
+html:has(head link[rel="canonical"][href$="/awards/"]) .post-single .post-title::after,
+html:has(head link[rel="canonical"][href$="/software/"]) .post-single .post-title::after,
+html:has(head link[rel="canonical"][href$="/news/"]) .post-single .post-title::after {
+  display: none !important;
+}
+
+/* Software page — animated laptop icon beside title */
+html:has(head link[rel="canonical"][href$="/software/"]) .post-single .post-title::after {
+  content: "💻" !important;
+  display: inline-block !important;
+  margin-left: .45rem !important;
+  font-size: 1.2em !important;
+  vertical-align: middle !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  animation: nk-sw-icon-float 3.3s ease-in-out infinite !important;
+}
+@keyframes nk-sw-icon-float {
+  0%,100% { transform: translateY(0) rotate(-5deg);  filter: drop-shadow(0 0 0 transparent); }
+  50%     { transform: translateY(-5px) rotate(5deg); filter: drop-shadow(0 4px 8px rgba(80,0,0,.15)); }
+}
+
+/* Research page — animated microscope beside title */
+html:has(head link[rel="canonical"][href$="/research/"]) .post-single .post-title::after {
+  content: "📝" !important;
+  display: inline-block !important;
+  margin-left: .45rem !important;
+  font-size: 1.25em !important;
+  vertical-align: middle !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  animation: nk-research-icon-float 3.5s ease-in-out infinite !important;
+}
+@keyframes nk-research-icon-float {
+  0%,100% { transform: translateY(0) rotate(-6deg);  filter: drop-shadow(0 0px 0px transparent); }
+  50%     { transform: translateY(-5px) rotate(6deg); filter: drop-shadow(0 4px 10px rgba(80,0,0,.18)); }
+}
+
+/* Awards page — animated trophy beside title */
+html:has(head link[rel="canonical"][href$="/awards/"]) .post-single .post-title::after {
+  content: "🏆" !important;
+  display: inline-block !important;
+  margin-left: .45rem !important;
+  font-size: 1.2em !important;
+  vertical-align: middle !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  animation: nk-trophy-float 3.2s ease-in-out infinite !important;
+}
+@keyframes nk-trophy-float {
+  0%,100% { transform: translateY(0) rotate(-6deg);  filter: drop-shadow(0 0px 0px transparent); }
+  50%     { transform: translateY(-5px) rotate(6deg); filter: drop-shadow(0 4px 10px rgba(200,150,0,.3)); }
+}
+
+/* Contact page — animated envelope beside title */
+html:has(head link[rel="canonical"][href*="/contact"]) .post-single .post-title::after {
+  content: "✉";
+  display: inline-block;
+  margin-left: .55rem;
+  font-size: 1.25em;
+  vertical-align: middle;
+  color: var(--nk-accent);
+  animation: ct-env-float 3.2s ease-in-out infinite;
+  transform-origin: center;
+  background: none !important;
+  -webkit-text-fill-color: var(--nk-accent) !important;
+}
+body.dark html:has(head link[rel="canonical"][href*="/contact"]) .post-single .post-title::after {
+  color: #ddd8d8;
+  -webkit-text-fill-color: #ddd8d8 !important;
+}
+
+@keyframes ct-env-float {
+  0%, 100% {
+    transform: translateY(0) rotate(-8deg);
+    filter: drop-shadow(0 0px 0px transparent);
+  }
+  50% {
+    transform: translateY(-6px) rotate(8deg);
+    filter: drop-shadow(0 4px 10px color-mix(in srgb, var(--nk-accent) 30%, transparent));
+  }
+}
 
 /* ---------- 5) Better inline code (less “blocky”, more premium) ---------- */
 .post-content :not(pre) > code{
@@ -1142,14 +1357,85 @@ body.dark .post-content h2::before{
   .post-content h2::before{ display:none; }
 }
 
-/* 5) “Glassy” research tags (rk-tag) */
-.rk-tag{
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background: color-mix(in srgb, var(--rk-accent) 12%, rgba(255,255,255,.55));
+/* 5) Fancy filled research tag */
+.rk-tag {
+  background: linear-gradient(135deg, var(--rk-accent) 0%, color-mix(in srgb, var(--rk-accent) 75%, #000) 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-size: .72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .07em !important;
+  text-transform: uppercase !important;
+  padding: .3rem .7rem !important;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--rk-accent) 35%, transparent) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
-body.dark .rk-tag{
-  background: color-mix(in srgb, #ddd8d8 10%, rgba(10,12,16,.45));
+body.dark .rk-tag {
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--rk-accent) 25%, transparent) !important;
+}
+
+/* Topic badges */
+.rk-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .5rem 0 .2rem;
+}
+.rk-topic {
+  display: inline-flex;
+  align-items: center;
+  padding: .18rem .62rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  border: 1px solid transparent;
+}
+/* Symbolic Regression — amber */
+.rk-topic--sr {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+}
+body.dark .rk-topic--sr {
+  background: color-mix(in srgb, #f59e0b 14%, transparent);
+  color: #fcd34d;
+  border-color: color-mix(in srgb, #f59e0b 28%, transparent);
+}
+/* Variational Inference — indigo */
+.rk-topic--vi {
+  background: #e0e7ff;
+  color: #3730a3;
+  border-color: #c7d2fe;
+}
+body.dark .rk-topic--vi {
+  background: color-mix(in srgb, #818cf8 14%, transparent);
+  color: #a5b4fc;
+  border-color: color-mix(in srgb, #818cf8 28%, transparent);
+}
+/* Bayesian Optimization — teal */
+.rk-topic--bo {
+  background: #ccfbf1;
+  color: #0f766e;
+  border-color: #99f6e4;
+}
+body.dark .rk-topic--bo {
+  background: color-mix(in srgb, #2dd4bf 14%, transparent);
+  color: #5eead4;
+  border-color: color-mix(in srgb, #2dd4bf 28%, transparent);
+}
+/* Quantum Cryptography — violet */
+.rk-topic--qc {
+  background: #ede9fe;
+  color: #6d28d9;
+  border-color: #ddd6fe;
+}
+body.dark .rk-topic--qc {
+  background: color-mix(in srgb, #a78bfa 14%, transparent);
+  color: #c4b5fd;
+  border-color: color-mix(in srgb, #a78bfa 28%, transparent);
 }
 
 /* 6) Paragraph rhythm on single pages (subtle dividers) */
@@ -1239,43 +1525,71 @@ body.dark .post-content ul li::before{
   }
   
   /* =========================================================
-     1) RESEARCH BLURB — fancy border (same gradient) + hover
-     Requires your blurb wrapper like: <div class="rk-intro">...</div>
+     1) RESEARCH BLURB — open typographic treatment, no box
      ========================================================= */
-  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro{
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro {
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 1.5rem 0 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    text-align: center;
     position: relative;
-    border: none !important;
-    border-radius: 16px;
-    padding: 1.05rem 1.15rem;
-    background: color-mix(in srgb, var(--nk-paper) 92%, white);
-    box-shadow: none;
-    transition: transform .16s ease, box-shadow .18s ease;
-    overflow: hidden;
+    transition: none !important;
   }
-  
-  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    padding: 2px;
-    border-radius: inherit;
-    background: var(--nk-inkgrad);
-    -webkit-mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    pointer-events:none;
+
+  /* Remove gradient border mask */
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro::before {
+    content: none !important;
   }
-  
-  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro > *{
+
+  /* No hover lift */
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Decorative large opening quote */
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro p {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--nk-muted);
+    font-style: italic;
+    max-width: 62ch;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2.8rem;
+  }
+
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro p::before {
+    content: "\201C";
+    position: absolute;
+    top: -.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    line-height: 1;
+    font-style: normal;
+    color: color-mix(in srgb, var(--nk-accent) 22%, transparent);
+    font-family: "Source Serif 4", Georgia, serif;
+    pointer-events: none;
+  }
+
+  /* Thin accent rule below */
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--nk-accent) 35%, transparent);
+    margin: 1.2rem auto 0;
+  }
+
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro > * {
     position: relative;
     z-index: 1;
-  }
-  
-  html:has(head link[rel="canonical"][href$="/research/"]) .rk-intro:hover{
-    transform: translateY(-2px);
-    box-shadow: var(--nk-shadow, 0 10px 30px rgba(17,24,39,.06));
   }
   
   /* =========================================================
@@ -1324,7 +1638,7 @@ html:has(head link[rel="canonical"][href*="/research"])
 }
 
   /* =========================================================
-     2) RESEARCH CARDS — same gradient border + hover lift
+     2) RESEARCH CARDS — gradient border + hover lift
      ========================================================= */
   html:has(head link[rel="canonical"][href$="/research/"]) .rk-item{
     position: relative;
@@ -1333,7 +1647,7 @@ html:has(head link[rel="canonical"][href*="/research"])
     overflow: hidden;
     transition: transform .16s ease, box-shadow .18s ease;
   }
-  
+
   html:has(head link[rel="canonical"][href$="/research/"]) .rk-item::before{
     content:"";
     position:absolute;
@@ -1348,7 +1662,7 @@ html:has(head link[rel="canonical"][href*="/research"])
             mask-composite: exclude;
     pointer-events:none;
   }
-  
+
   html:has(head link[rel="canonical"][href$="/research/"]) .rk-item > *{
     position: relative;
     z-index: 1;
@@ -1621,7 +1935,235 @@ html:has(head link[rel="canonical"][href$="/news/"])
 
 
 
-  /* =========================================================
+/* =========================================================
+   NEWS PAGE — enhancements
+   ========================================================= */
+
+/* 1. Animated 📰 icon beside "News" title */
+html:has(head link[rel="canonical"][href$="/news/"]) .post-single .post-title::after {
+  content: "📰" !important;
+  display: inline-block !important;
+  margin-left: .45rem !important;
+  font-size: 1.2em !important;
+  vertical-align: middle !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  animation: nk-news-icon-float 3.4s ease-in-out infinite !important;
+}
+@keyframes nk-news-icon-float {
+  0%,100% { transform: translateY(0) rotate(-5deg);  filter: drop-shadow(0 0 0 transparent); }
+  50%     { transform: translateY(-5px) rotate(5deg); filter: drop-shadow(0 4px 8px rgba(80,0,0,.15)); }
+}
+
+/* 2. Suppress magazine rule on news page */
+html:has(head link[rel="canonical"][href$="/news/"]) .post-single .post-title::after {
+  /* icon overrides magazine rule — display is already set to inline-block above */
+}
+
+/* 3. Year summary — circle milestone node */
+html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+  width: 100% !important;
+  padding: .4rem 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary:hover {
+  background: transparent !important;
+  transform: none !important;
+}
+
+/* Circle year node */
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-yearlabel {
+  order: 1;
+  display: block !important;
+  width: 52px !important;
+  height: 52px !important;
+  line-height: 48px !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  border: 2px solid color-mix(in srgb, var(--nk-accent) 45%, transparent) !important;
+  background: var(--nk-paper) !important;
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.01em !important;
+  color: var(--nk-accent) !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  transition: background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+}
+/* Open state — filled with halo (matches rk-htl-dot--recent) */
+html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-yearlabel {
+  background: var(--nk-accent) !important;
+  color: #fff !important;
+  border-color: var(--nk-accent) !important;
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--nk-accent) 14%, transparent) !important;
+}
+/* Hover — solid border, keep text fully visible */
+html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary:hover .ns-yearlabel {
+  border-color: var(--nk-accent) !important;
+  background: var(--nk-paper) !important;
+  color: color-mix(in srgb, var(--nk-accent) 90%, #000) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--nk-accent) 10%, transparent) !important;
+}
+
+/* Horizontal rule extending right from the circle */
+html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary::before {
+  content: "" !important;
+  display: block !important;
+  order: 2;
+  flex: 1 !important;
+  height: 1px !important;
+  background: var(--nk-line) !important;
+  margin: 0 .9rem !important;
+  pointer-events: none;
+}
+
+/* Chevron — pushed to order 3 */
+html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary::after {
+  order: 3;
+}
+
+/* Dark mode */
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) .ns-yearlabel {
+  color: #ddd8d8 !important;
+  border-color: color-mix(in srgb, #ddd8d8 40%, transparent) !important;
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-yearlabel {
+  background: #ddd8d8 !important;
+  color: var(--nk-paper) !important;
+  border-color: #ddd8d8 !important;
+  box-shadow: 0 0 0 5px color-mix(in srgb, #ddd8d8 14%, transparent) !important;
+}
+
+/* 4. Month as styled date pill (MM/YY) */
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-month {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: .12rem .4rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--nk-line) !important;
+  background: color-mix(in srgb, var(--nk-ink) 4%, transparent) !important;
+  font-family: var(--font-mono) !important;
+  font-size: .68rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  color: var(--nk-muted) !important;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 5. News-type icons — shown above month text in the left column */
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type] .ns-month {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: .2rem !important;
+}
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type] .ns-month::before {
+  font-size: .95rem;
+  line-height: 1;
+}
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="award"] .ns-month::before      { content: "🏆"; }
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="paper"] .ns-month::before      { content: "📄"; }
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="talk"] .ns-month::before       { content: "🎤"; }
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="internship"] .ns-month::before { content: "💼"; }
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="media"] .ns-month::before      { content: "📰"; }
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li[data-type="code"] .ns-month::before       { content: "💻"; }
+
+/* 6. Vertical timeline — left border + dots at each card */
+html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list {
+  border-left: 2px solid color-mix(in srgb, var(--nk-accent) 18%, transparent);
+  margin-left: .5rem !important;
+  padding-left: .85rem !important;
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list {
+  border-left-color: color-mix(in srgb, #ddd8d8 16%, transparent);
+}
+
+/* Dot on the timeline rail — matches research/awards dot style */
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li {
+  position: relative;
+}
+html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li::after {
+  content: "";
+  position: absolute;
+  left: calc(-.85rem - 1px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--nk-paper);
+  border: 2px solid color-mix(in srgb, var(--nk-accent) 55%, transparent);
+  box-sizing: border-box;
+  z-index: 2;
+  pointer-events: none;
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+/* Most recent item — filled with halo (same as rk-htl-dot--recent) */
+html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li:first-child::after {
+  background: var(--nk-accent);
+  border-color: var(--nk-accent);
+  width: 11px;
+  height: 11px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--nk-accent) 15%, transparent);
+}
+/* Hover — fill like research hover */
+html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li:hover::after {
+  background: color-mix(in srgb, var(--nk-accent) 18%, transparent);
+  border-color: var(--nk-accent);
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li::after {
+  background: var(--nk-paper);
+  border-color: color-mix(in srgb, #ddd8d8 45%, transparent);
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li:first-child::after {
+  background: #ddd8d8;
+  border-color: #ddd8d8;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #ddd8d8 15%, transparent);
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li:hover::after {
+  background: color-mix(in srgb, #ddd8d8 18%, transparent);
+  border-color: #ddd8d8;
+}
+
+/* 7. "New" badge */
+html:has(head link[rel="canonical"][href$="/news/"]) .ns-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .1rem .4rem;
+  border-radius: 999px;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  margin-right: .4rem;
+  vertical-align: middle;
+  animation: ns-badge-pulse 2.5s ease-in-out infinite;
+}
+body.dark html:has(head link[rel="canonical"][href$="/news/"]) .ns-badge {
+  color: #86efac;
+  background: color-mix(in srgb, #22c55e 12%, transparent);
+  border-color: color-mix(in srgb, #22c55e 30%, transparent);
+}
+@keyframes ns-badge-pulse {
+  0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, #22c55e 0%, transparent); }
+  50%     { box-shadow: 0 0 0 4px color-mix(in srgb, #22c55e 15%, transparent); }
+}
+
+/* =========================================================
    RESEARCH CARDS — match NEWS cards
    Same border color, same hover lift, same visual language
    ========================================================= */
@@ -2048,6 +2590,1051 @@ html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero:hover{
 body.dark
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero:hover{
   border-color: color-mix(in srgb, #ddd8d8 22%, transparent);
+}
+
+/* =========================================================
+   ENHANCEMENT 1: Apply Google Fonts (already loaded in <head>)
+   ========================================================= */
+:root {
+  --font-heading: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-body:    "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Source Serif 4 for the profile bio — scholarly warmth */
+.profile-mode .post-content p,
+.home-info p,
+.profile_inner .subtitle,
+.profile_inner .subtitle p {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.07rem;
+  line-height: 1.82;
+}
+
+/* =========================================================
+   ENHANCEMENT 2: Frosted-glass sticky nav
+   ========================================================= */
+.header,
+.nav,
+.site-header,
+.header .nav {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  backdrop-filter: blur(14px) saturate(1.3) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.3) !important;
+  background: color-mix(in srgb, var(--nk-paper) 82%, transparent) !important;
+}
+
+/* =========================================================
+   ENHANCEMENT 3: Profile photo ring treatment
+   ========================================================= */
+.profile-mode img,
+.home-info img,
+#profile img {
+  border-radius: 50% !important;
+  box-shadow:
+    0 0 0 4px var(--nk-paper),
+    0 0 0 6px color-mix(in srgb, var(--nk-accent) 30%, transparent),
+    0 8px 32px color-mix(in srgb, var(--nk-accent) 12%, transparent) !important;
+  transition: box-shadow 0.35s ease !important;
+  animation: nk-float 4s ease-in-out infinite;
+}
+@keyframes nk-float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+.profile-mode img:hover,
+.home-info img:hover,
+#profile img:hover {
+  box-shadow:
+    0 0 0 4px var(--nk-paper),
+    0 0 0 6px color-mix(in srgb, var(--nk-accent) 55%, transparent),
+    0 12px 40px color-mix(in srgb, var(--nk-accent) 20%, transparent) !important;
+}
+body.dark .profile-mode img,
+body.dark .home-info img,
+body.dark #profile img {
+  box-shadow:
+    0 0 0 4px var(--nk-paper),
+    0 0 0 6px color-mix(in srgb, #ddd8d8 28%, transparent),
+    0 8px 32px color-mix(in srgb, #ddd8d8 10%, transparent) !important;
+}
+
+/* =========================================================
+   ENHANCEMENT 4: Page-load fade-in animation
+   ========================================================= */
+@keyframes nk-fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+main,
+.profile-mode,
+#profile {
+  animation: nk-fadeInUp 0.45s ease both;
+}
+
+/* =========================================================
+   ENHANCEMENT 5: Warm radial gradient background accent
+   ========================================================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse 80% 40% at 50% -10%,
+    color-mix(in srgb, var(--nk-accent) 5%, transparent),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+body.dark::before {
+  background: radial-gradient(
+    ellipse 80% 40% at 50% -10%,
+    color-mix(in srgb, var(--nk-accent) 8%, transparent),
+    transparent 60%
+  );
+}
+
+/* =========================================================
+   HOME PAGE ENHANCEMENTS
+   ========================================================= */
+
+/* 3. Affiliation timeline — horizontal, compact */
+.nk-aff-htl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+/* Horizontal connecting line behind dots */
+.nk-aff-htl::before {
+  content: "";
+  position: absolute;
+  top: .3rem;
+  left: calc(100% / 6);
+  right: calc(100% / 6);
+  height: 2px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--nk-accent) 22%, transparent);
+}
+body.dark .nk-aff-htl::before {
+  background: color-mix(in srgb, #ddd8d8 20%, transparent);
+}
+
+.nk-aff-hitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1.1rem;
+  position: relative;
+}
+
+/* Dot */
+.nk-aff-hitem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: .62rem;
+  height: .62rem;
+  border-radius: 50%;
+  background: var(--nk-paper);
+  border: 2px solid color-mix(in srgb, var(--nk-accent) 55%, transparent);
+  box-sizing: border-box;
+}
+body.dark .nk-aff-hitem::before {
+  border-color: color-mix(in srgb, #ddd8d8 50%, transparent);
+}
+
+/* Primary dot — TAMU, filled */
+.nk-aff-hitem--primary::before {
+  background: var(--nk-accent);
+  border-color: var(--nk-accent);
+}
+body.dark .nk-aff-hitem--primary::before {
+  background: #ddd8d8;
+  border-color: #ddd8d8;
+}
+
+/* Current dot — Upstart, green pulse */
+.nk-aff-hitem--current::before {
+  background: #22c55e;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #22c55e 22%, transparent);
+  animation: nk-pulse 2s ease-in-out infinite;
+}
+@keyframes nk-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px color-mix(in srgb, #22c55e 22%, transparent); }
+  50%       { box-shadow: 0 0 0 6px color-mix(in srgb, #22c55e 10%, transparent); }
+}
+
+.nk-aff-horg {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--nk-ink);
+  line-height: 1.3;
+}
+.nk-aff-hrole {
+  font-size: .72rem;
+  color: var(--nk-muted);
+  margin-top: .15rem;
+  line-height: 1.3;
+}
+
+/* "Now" pill badge */
+.nk-now {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+  padding: .05rem .35rem;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+body.dark .nk-now {
+  color: #86efac;
+  background: color-mix(in srgb, #22c55e 12%, transparent);
+  border-color: color-mix(in srgb, #22c55e 30%, transparent);
+}
+
+/* Mobile: stack compactly */
+@media (max-width: 480px) {
+  .nk-aff-htl {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+  .nk-aff-htl::before { display: none; }
+  .nk-aff-hitem {
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 1.1rem;
+  }
+  .nk-aff-hitem::before {
+    left: 0;
+    top: .2rem;
+    transform: none;
+  }
+}
+
+/* 4. Research keyword chips */
+.nk-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: .18rem .55rem;
+  margin: 0;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--nk-accent) 35%, transparent);
+  background: color-mix(in srgb, var(--nk-accent) 8%, transparent);
+  color: var(--nk-accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  cursor: default;
+}
+.nk-chip:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--nk-accent) 20%, transparent);
+  background: color-mix(in srgb, var(--nk-accent) 14%, transparent);
+}
+body.dark .nk-chip {
+  border-color: color-mix(in srgb, #ddd8d8 30%, transparent);
+  background: color-mix(in srgb, #ddd8d8 10%, transparent);
+  color: #ddd8d8;
+}
+body.dark .nk-chip:hover {
+  box-shadow: 0 4px 14px color-mix(in srgb, #ddd8d8 14%, transparent);
+  background: color-mix(in srgb, #ddd8d8 16%, transparent);
+}
+
+/* Center everything on the home page + remove full-viewport forced height */
+.main .profile {
+  justify-content: center !important;
+  min-height: auto !important;
+}
+.profile .profile_inner {
+  align-items: center !important;
+  text-align: center !important;
+}
+.profile_inner .subtitle,
+.profile_inner .subtitle p,
+.profile_inner .subtitle div,
+.profile_inner .subtitle span {
+  text-align: center !important;
+}
+.profile_inner .social-icons {
+  justify-content: center !important;
+}
+.profile_inner .buttons {
+  justify-content: center !important;
+}
+
+/* 4. Staggered entrance for profile child elements */
+.profile_inner > * {
+  opacity: 0;
+  animation: nk-fadeInUp 0.5s ease forwards;
+}
+.profile_inner > *:nth-child(1) { animation-delay: 0.1s; }
+.profile_inner > *:nth-child(2) { animation-delay: 0.22s; }
+.profile_inner > *:nth-child(3) { animation-delay: 0.38s; }
+.profile_inner > *:nth-child(4) { animation-delay: 0.54s; }
+.profile_inner > *:nth-child(5) { animation-delay: 0.68s; }
+.profile_inner > *:nth-child(6) { animation-delay: 0.80s; }
+
+/* 5. Scroll-down cue */
+.profile-mode::after {
+  content: "↓";
+  display: block;
+  text-align: center;
+  color: var(--nk-muted);
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  animation: nk-bounce 2s ease-in-out infinite;
+}
+@keyframes nk-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+/* =========================================================
+   RESEARCH PAGE — FILTER CONTROLS
+   ========================================================= */
+
+/* Segmented control container */
+.rk-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin: 2rem auto;
+  padding: 4px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--nk-ink) 6%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--nk-line);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 1px 3px color-mix(in srgb, var(--nk-ink) 6%, transparent);
+}
+
+.rk-tab {
+  display: inline-flex;
+  align-items: center;
+  padding: .38rem 1.05rem;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--nk-muted);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, box-shadow .2s ease;
+  font-family: var(--font-body);
+  white-space: nowrap;
+}
+.rk-tab:hover {
+  color: var(--nk-ink);
+  background: color-mix(in srgb, var(--nk-ink) 6%, transparent);
+}
+.rk-tab--active {
+  background: linear-gradient(135deg, var(--nk-accent) 0%, color-mix(in srgb, var(--nk-accent) 78%, #000) 100%) !important;
+  color: #fff !important;
+  box-shadow:
+    0 2px 8px color-mix(in srgb, var(--nk-accent) 35%, transparent),
+    0 1px 2px rgba(0,0,0,.12) !important;
+}
+body.dark .rk-tab--active {
+  background: linear-gradient(135deg, rgba(255,255,255,.92) 0%, rgba(220,216,216,.85) 100%) !important;
+  color: #0c0f14 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25) !important;
+}
+
+.rk-tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  font-size: .68rem;
+  background: color-mix(in srgb, currentColor 15%, transparent);
+  line-height: 1;
+}
+
+/* Smooth group transitions */
+.rk-group {
+  transition: opacity .25s ease;
+}
+
+/* Status badge — subtle pill */
+.rk-status {
+  display: inline-block;
+  margin-top: .25rem;
+  font-size: .76rem;
+  font-style: italic;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  border: 1px solid var(--nk-line);
+  background: color-mix(in srgb, var(--nk-ink) 4%, transparent);
+  color: var(--nk-muted);
+}
+
+/* =========================================================
+   RESEARCH PAGE — HORIZONTAL YEAR TIMELINE
+   ========================================================= */
+
+.rk-htl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: .5rem auto 2.5rem;
+  max-width: 620px;
+}
+
+/* "All" pill button */
+.rk-htl-all {
+  display: inline-flex;
+  align-items: center;
+  padding: .28rem .85rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--nk-line);
+  background: transparent;
+  color: var(--nk-muted);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: var(--font-body);
+  flex-shrink: 0;
+  margin-bottom: 1.4rem;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+.rk-htl-all--active {
+  background: var(--nk-accent);
+  border-color: var(--nk-accent);
+  color: #fff;
+}
+.rk-htl-all:hover:not(.rk-htl-all--active) {
+  border-color: color-mix(in srgb, var(--nk-accent) 45%, transparent);
+  color: var(--nk-accent);
+}
+body.dark .rk-htl-all--active {
+  background: #ddd8d8;
+  border-color: #ddd8d8;
+  color: #0c0f14;
+}
+
+/* Short separator between All and first node */
+.rk-htl-sep {
+  width: 22px;
+  height: 2px;
+  background: var(--nk-line);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-bottom: 1.4rem;
+}
+
+/* Year node — acts as a button */
+.rk-htl-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .52rem;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: opacity .2s ease;
+}
+.rk-htl-node:hover .rk-htl-dot {
+  border-color: var(--nk-accent);
+  background: color-mix(in srgb, var(--nk-accent) 12%, transparent);
+}
+.rk-htl-node:hover .rk-htl-lbl { color: var(--nk-accent); }
+body.dark .rk-htl-node:hover .rk-htl-lbl { color: #ddd8d8; }
+
+/* Connecting line */
+.rk-htl-conn {
+  flex: 1;
+  height: 2px;
+  min-width: 45px;
+  max-width: 120px;
+  margin-bottom: 1.4rem;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--nk-accent) 45%, transparent),
+    color-mix(in srgb, var(--nk-accent) 18%, transparent)
+  );
+  border-radius: 2px;
+  transition: opacity .2s ease;
+}
+body.dark .rk-htl-conn {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #ddd8d8 38%, transparent),
+    color-mix(in srgb, #ddd8d8 12%, transparent)
+  );
+}
+
+/* Standard dot */
+.rk-htl-dot {
+  width: .85rem;
+  height: .85rem;
+  border-radius: 50%;
+  background: var(--nk-paper);
+  border: 2px solid color-mix(in srgb, var(--nk-accent) 38%, transparent);
+  box-sizing: border-box;
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+body.dark .rk-htl-dot {
+  border-color: color-mix(in srgb, #ddd8d8 35%, transparent);
+}
+
+/* Most-recent dot */
+.rk-htl-dot--recent {
+  width: 1.05rem;
+  height: 1.05rem;
+  background: var(--nk-accent);
+  border-color: var(--nk-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--nk-accent) 15%, transparent);
+}
+body.dark .rk-htl-dot--recent {
+  background: #ddd8d8;
+  border-color: #ddd8d8;
+  box-shadow: 0 0 0 4px color-mix(in srgb, #ddd8d8 15%, transparent);
+}
+
+/* Year label */
+.rk-htl-lbl {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--nk-muted);
+  transition: color .2s ease;
+}
+.rk-htl-node[data-year="2026"] .rk-htl-lbl { color: var(--nk-accent); }
+body.dark .rk-htl-node[data-year="2026"] .rk-htl-lbl { color: #ddd8d8; }
+
+/* Selected node */
+.rk-htl-node--selected .rk-htl-dot {
+  background: var(--nk-accent) !important;
+  border-color: var(--nk-accent) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--nk-accent) 15%, transparent) !important;
+}
+.rk-htl-node--selected .rk-htl-lbl { color: var(--nk-accent) !important; }
+body.dark .rk-htl-node--selected .rk-htl-dot {
+  background: #ddd8d8 !important;
+  border-color: #ddd8d8 !important;
+}
+body.dark .rk-htl-node--selected .rk-htl-lbl { color: #ddd8d8 !important; }
+
+/* Dim non-selected when filtered */
+.rk-htl--filtered .rk-htl-node:not(.rk-htl-node--selected) { opacity: .32; }
+.rk-htl--filtered .rk-htl-conn { opacity: .25; }
+
+/* rk-year column on research page */
+html:has(head link[rel="canonical"][href$="/research/"]) .rk-year {
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .02em !important;
+  text-transform: none;
+  color: var(--nk-ink) !important;
+  opacity: .8;
+  padding-top: .2rem;
+}
+html:has(head link[rel="canonical"][href$="/research/"]) .rk-year::after {
+  display: none !important;
+}
+
+
+/* =========================================================
+   RESEARCH CARDS — author name highlight
+   ========================================================= */
+.rk-meta strong {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--rk-text, var(--nk-ink)) 35%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-style: solid;
+}
+body.dark .rk-meta strong {
+  text-decoration-color: color-mix(in srgb, #ddd8d8 32%, transparent);
+}
+
+/* =========================================================
+   FANCY HOVER EFFECTS
+   ========================================================= */
+
+/* Social icons — glowing halo on hover */
+.social-icons a {
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease !important;
+}
+.social-icons a:hover {
+  transform: scale(1.18) !important;
+  background: color-mix(in srgb, var(--nk-accent) 10%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--nk-accent) 10%, transparent);
+}
+body.dark .social-icons a:hover {
+  background: color-mix(in srgb, #ddd8d8 10%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, #ddd8d8 10%, transparent);
+}
+
+/* =========================================================
+   NAV OVERHAUL — elegant pill nav
+   ========================================================= */
+
+/* Site logo */
+.logo a,
+.header .logo a {
+  font-weight: 750 !important;
+  font-size: 1rem !important;
+  letter-spacing: -.01em;
+  color: var(--nk-ink) !important;
+  text-decoration: none !important;
+  transition: color .2s ease;
+}
+.logo a:hover,
+.header .logo a:hover {
+  color: var(--nk-accent) !important;
+}
+body.dark .logo a:hover,
+body.dark .header .logo a:hover {
+  color: #ddd8d8 !important;
+}
+
+/* Kill all old pseudo-element conflicts on nav */
+#menu a::before,
+#menu a::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Nav links — underline via background-image (no overflow) */
+#menu a {
+  font-size: .78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .055em !important;
+  text-transform: uppercase !important;
+  color: var(--nk-muted) !important;
+  padding: .38rem .7rem !important;
+  border-radius: 0 !important;
+  border: none !important;
+  text-decoration: none !important;
+  background-image: linear-gradient(var(--nk-accent), var(--nk-accent)) !important;
+  background-size: 0% 2px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  transition: background-size .26s ease, color .2s ease !important;
+}
+body.dark #menu a {
+  background-image: linear-gradient(#ddd8d8, #ddd8d8) !important;
+}
+
+/* Hover */
+#menu a:hover {
+  color: var(--nk-ink) !important;
+  background-size: 100% 2px !important;
+}
+body.dark #menu a:hover { color: rgba(255,255,255,.92) !important; }
+
+/* Active page — underline always visible */
+#menu a:has(span.active) {
+  color: var(--nk-ink) !important;
+  background-size: 100% 2px !important;
+}
+body.dark #menu a:has(span.active) { color: rgba(255,255,255,.92) !important; }
+
+/* Buttons — gradient light sweep on hover */
+.button::after,
+.btn::after,
+.home-info .button::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    color-mix(in srgb, var(--nk-accent) 14%, transparent) 50%,
+    transparent 100%
+  ) !important;
+  transform: translateX(-100%) !important;
+  transition: transform .42s ease !important;
+  pointer-events: none !important;
+  display: block !important;
+}
+.button:hover::after,
+.btn:hover::after,
+.home-info .button:hover::after {
+  transform: translateX(100%) !important;
+}
+
+/* Research card accent bar — grows on hover */
+.rk-item::before {
+  transition: top .22s ease, bottom .22s ease, background .22s ease !important;
+}
+.rk-item:hover::before {
+  top: 6px !important;
+  bottom: 6px !important;
+  background: color-mix(in srgb, var(--rk-accent) 80%, transparent) !important;
+}
+
+/* =========================================================
+   GLOBAL POLISH — progress bar, scroll-top, footer,
+   page transitions, mobile nav
+   ========================================================= */
+
+/* 1. Reading progress bar — thin maroon line at top of viewport */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 2.5px;
+  width: var(--scroll, 0%);
+  background: linear-gradient(
+    90deg,
+    var(--nk-accent),
+    color-mix(in srgb, var(--nk-accent) 55%, transparent)
+  );
+  pointer-events: none;
+  transition: width .08s linear;
+}
+body.dark::after {
+  background: linear-gradient(
+    90deg,
+    #ddd8d8,
+    color-mix(in srgb, #ddd8d8 50%, transparent)
+  );
+}
+
+/* 2. Scroll-to-top button — refined floating pill */
+.top-link {
+  background: var(--nk-paper) !important;
+  border: 1.5px solid var(--nk-line) !important;
+  border-radius: 999px !important;
+  width: 40px !important;
+  height: 40px !important;
+  bottom: 2rem !important;
+  right: 1.8rem !important;
+  box-shadow: 0 4px 16px rgba(17,24,39,.08) !important;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, opacity .4s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+.top-link:hover {
+  transform: translateY(-3px) !important;
+  border-color: color-mix(in srgb, var(--nk-accent) 50%, transparent) !important;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--nk-accent) 14%, transparent) !important;
+}
+.top-link svg {
+  fill: var(--nk-accent) !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+body.dark .top-link {
+  background: color-mix(in srgb, var(--nk-paper) 90%, black) !important;
+}
+body.dark .top-link svg { fill: #ddd8d8 !important; }
+
+/* 5. Footer refinement */
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  padding: 1.2rem 0 1rem;
+}
+.footer-rule {
+  width: 3rem;
+  height: 1px;
+  background: var(--nk-line);
+  border-radius: 2px;
+  margin-bottom: .2rem;
+}
+.footer-copy {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--nk-muted);
+}
+.footer-tagline {
+  font-size: .74rem;
+  color: color-mix(in srgb, var(--nk-muted) 70%, transparent);
+  letter-spacing: .02em;
+}
+
+/* 6. Smooth page fade-in transition */
+@keyframes nk-page-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+main {
+  animation: nk-page-in .35s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  main { animation: none !important; }
+}
+
+/* 7. Mobile navigation — frosted glass + clean wrap */
+@media (max-width: 768px) {
+  .header, .nav, .header .nav {
+    backdrop-filter: blur(18px) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(1.4) !important;
+  }
+  #menu {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: .2rem !important;
+    padding: .35rem .5rem !important;
+    row-gap: .3rem !important;
+  }
+  #menu a {
+    font-size: .7rem !important;
+    padding: .3rem .55rem !important;
+  }
+}
+
+/* =========================================================
+   MOBILE OPTIMIZATIONS — comprehensive responsive polish
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  /* ── Home: profile sizing ── */
+  .profile-mode img, .home-info img, #profile img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .profile_inner h1 {
+    font-size: 1.65rem !important;
+    text-align: left !important;
+  }
+
+  /* ── Home: left-align profile section ── */
+  .main .profile { justify-content: flex-start !important; }
+  .profile .profile_inner { align-items: flex-start !important; }
+  .profile_inner .social-icons { justify-content: flex-start !important; }
+  .profile_inner .buttons { justify-content: flex-start !important; }
+  .profile_inner .subtitle,
+  .profile_inner .subtitle p,
+  .profile_inner .subtitle div { text-align: left !important; }
+
+  /* ── Home: body text smaller ── */
+  body { font-size: 15px; }
+  .profile_inner .post-content p,
+  .home-info p,
+  .profile_inner .subtitle p {
+    font-size: .88rem !important;
+    line-height: 1.68 !important;
+  }
+
+  /* ── Home: research interest chips — wrap + compact ── */
+  .profile_inner .subtitle p[style] {
+    flex-wrap: wrap !important;
+    gap: .28rem !important;
+    justify-content: flex-start !important;
+  }
+  .nk-chip {
+    font-size: .65rem !important;
+    font-weight: 600 !important;
+    padding: .14rem .45rem !important;
+    margin: 0 !important;
+    letter-spacing: .01em !important;
+    white-space: nowrap !important;
+  }
+
+  /* ── Home: affiliation → vertical timeline ── */
+  /* Use border-left as rail — most reliable, no positioning math */
+  .nk-aff-htl {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding-left: 1.2rem !important;
+    margin-left: .3rem !important;
+    margin-bottom: 1.1rem !important;
+    border-left: 2px solid color-mix(in srgb, var(--nk-accent) 30%, transparent) !important;
+    background: none;
+  }
+  body.dark .nk-aff-htl {
+    border-left-color: color-mix(in srgb, #ddd8d8 25%, transparent) !important;
+  }
+
+  /* Kill horizontal line pseudo-elements */
+  .nk-aff-htl::before,
+  .nk-aff-htl::after { display: none !important; content: none !important; }
+
+  /* Each item: column, left-aligned */
+  .nk-aff-hitem {
+    display: block !important;
+    text-align: left !important;
+    padding-top: 0 !important;
+    padding-bottom: .8rem !important;
+    position: relative !important;
+    align-items: flex-start !important;
+  }
+  .nk-aff-hitem:last-child { padding-bottom: 0 !important; }
+
+  /* Dot: centered on the border-left line using translateX(-50%) */
+  .nk-aff-hitem::before {
+    position: absolute !important;
+    left: calc(-1.2rem - 1px) !important; /* border center from item left */
+    top: .18rem !important;
+    transform: translateX(-50%) !important;
+    width: .6rem !important;
+    height: .6rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .nk-aff-horg { font-size: .8rem !important; font-weight: 700 !important; }
+  .nk-aff-hrole { font-size: .7rem !important; margin-top: .06rem !important; }
+
+  /* ── Home: profile buttons ── */
+  .profile_inner .buttons { gap: .3rem !important; flex-wrap: wrap !important; }
+  .button, .btn, .home-info .button {
+    font-size: .78rem !important;
+    padding: .3rem .62rem !important;
+    min-height: 40px !important;
+  }
+
+  /* ── Home: social icons spacing ── */
+  .social-icons { gap: .1rem; }
+  .social-icons a { padding: 6px !important; }
+
+  /* ── rk-htl (research + awards timeline) compact ── */
+  .rk-htl { max-width: 100%; }
+  .rk-htl-all {
+    font-size: .64rem !important;
+    padding: .24rem .52rem !important;
+    margin-bottom: .85rem !important;
+    min-height: 32px !important;
+  }
+  .rk-htl-sep { width: 10px !important; margin-bottom: .85rem !important; }
+  .rk-htl-conn {
+    min-width: 12px !important;
+    max-width: 36px !important;
+    margin-bottom: .85rem !important;
+  }
+  .rk-htl-dot { width: .62rem !important; height: .62rem !important; }
+  .rk-htl-dot--recent { width: .78rem !important; height: .78rem !important; box-shadow: 0 0 0 3px color-mix(in srgb, var(--nk-accent) 14%, transparent) !important; }
+  .rk-htl-node { padding-top: .82rem !important; gap: .38rem !important; }
+  .rk-htl-lbl { font-size: .56rem !important; letter-spacing: .05em !important; }
+
+  /* ── Awards/Software: card padding ── */
+  .nk-face { padding: .85rem .95rem 2rem !important; }
+  .nk-title { font-size: .98rem !important; }
+  .nk-desc, .nk-duty { font-size: .88rem !important; }
+
+  /* ── News: year circle smaller ── */
+  html:has(head link[rel="canonical"][href$="/news/"]) .ns-yearlabel {
+    width: 42px !important;
+    height: 42px !important;
+    line-height: 38px !important;
+    font-size: .88rem !important;
+  }
+  html:has(head link[rel="canonical"][href$="/news/"]) details.ns-year > summary::before {
+    flex: 0 0 .8rem !important;
+  }
+
+  /* ── News: card padding ── */
+  html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li {
+    padding: .6rem .72rem !important;
+    gap: .5rem !important;
+    grid-template-columns: 44px 1fr !important;
+  }
+  html:has(head link[rel="canonical"][href$="/news/"]) .ns-month {
+    font-size: .6rem !important;
+  }
+  html:has(head link[rel="canonical"][href$="/news/"]) .ns-body {
+    font-size: .88rem !important;
+  }
+
+  /* ── Contact: hero + cards + map ── */
+  html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero {
+    padding: 1rem 0 0 !important;
+  }
+  html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero p {
+    font-size: .98rem !important;
+    max-width: 100% !important;
+    padding: 0 .5rem;
+  }
+  html:has(head link[rel="canonical"][href*="/contact"]) .ct-card {
+    padding: 1.1rem 1.2rem !important;
+  }
+  html:has(head link[rel="canonical"][href*="/contact"]) .ct-map iframe {
+    height: 260px !important;
+  }
+  html:has(head link[rel="canonical"][href*="/contact"]) .ct-map-label {
+    font-size: .62rem !important;
+    padding: .6rem 1rem !important;
+  }
+
+  /* ── Research: year label column ── */
+  html:has(head link[rel="canonical"][href$="/research/"]) .rk-year {
+    font-size: .9rem !important;
+  }
+
+  /* ── Scroll-to-top ── */
+  .top-link {
+    right: .8rem !important;
+    bottom: 1rem !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* ── General headings ── */
+  h1 { font-size: clamp(1.6rem, 6vw, 2.2rem) !important; }
+  h2 { font-size: clamp(1.25rem, 4.5vw, 1.7rem) !important; }
+
+  /* ── Footer: always centered ── */
+  .footer, .footer-inner {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .footer-tagline { font-size: .66rem !important; padding: 0 1rem; }
+}
+
+/* ── Very small screens ≤380px (iPhone SE etc.) ── */
+@media (max-width: 380px) {
+
+  /* Keyword chips: allow wrapping */
+  .profile_inner .subtitle p {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: .3rem !important;
+  }
+  .nk-chip { font-size: .7rem !important; padding: .15rem .48rem !important; }
+
+  /* Hide All button — show all by default on tiny screens */
+  .rk-htl-all, .rk-htl-sep { display: none !important; }
+  .rk-htl-conn { min-width: 8px !important; }
+
+  /* Nav: tighter items */
+  #menu a { padding: .28rem .42rem !important; font-size: .68rem !important; }
+
+  /* Profile: tighter heading */
+  .profile_inner h1 { font-size: 1.6rem !important; }
 }
 
 /* =========================================================

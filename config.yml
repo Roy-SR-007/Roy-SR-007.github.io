@@ -65,7 +65,7 @@ params:
     ShowAllPagesInArchive: false
     MainSections: ["books","courses","papers","data"]
     ShowToc: false
-    disableScrollToTop: true
+    disableScrollToTop: false
     TocOpen: true
     ShowWordCount: false
     UseHugoToc: true
@@ -75,6 +75,20 @@ params:
           enabled: true
           title: Somjit Roy
           subtitle: |
+            <div class="nk-aff-htl">
+              <div class="nk-aff-hitem nk-aff-hitem--primary">
+                <div class="nk-aff-horg">Texas A&amp;M University</div>
+                <div class="nk-aff-hrole">Ph.D. Student &middot; Statistics</div>
+              </div>
+              <div class="nk-aff-hitem nk-aff-hitem--current">
+                <div class="nk-aff-horg">Upstart &thinsp;<span class="nk-now">Now</span></div>
+                <div class="nk-aff-hrole">Research Scientist Intern</div>
+              </div>
+              <div class="nk-aff-hitem">
+                <div class="nk-aff-horg">Los Alamos National Laboratory</div>
+                <div class="nk-aff-hrole">Summer Research Intern</div>
+              </div>
+            </div>
             <p>
             I am a third-year Ph.D. student in the
             <a href="https://artsci.tamu.edu/statistics/index.html" target="_blank">Department of Statistics</a>
@@ -83,11 +97,19 @@ params:
             <a href="https://sites.google.com/tamu.edu/bani-k-mallick/bio" target="_blank">Dr. Bani K. Mallick</a>
             and
             <a href="https://pages.stat.wisc.edu/~dpati2/" target="_blank">Dr. Debdeep Pati</a>.
+            This summer, I have joined the Machine Learning
+            team at <a href="https://www.upstart.com/" target="_blank">Upstart</a> as a Research Scientist Intern.
             </p><br>
             <p>
             My research bridges data-driven learning and scientific reasoning through computational Bayes,
             with a focus on scientific machine learning, approximate Bayesian inference,
             and Bayesian optimization for complex scientific systems.
+            </p>
+            <p style="margin-top:1.1rem;display:flex;flex-wrap:nowrap;justify-content:center;gap:.45rem;align-items:center">
+              <span class="nk-chip">Symbolic Regression</span>
+              <span class="nk-chip">Probabilistic SciML</span>
+              <span class="nk-chip">Approximate Bayes</span>
+              <span class="nk-chip">Bayesian Optimization</span>
             </p>
           imageUrl: "somjit-1.jpg"
           imageWidth: 220
@@ -159,7 +181,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: autumn 
+        style: github
     tableOfContents:
         endLevel: 2
         ordered: false

@@ -7,43 +7,35 @@ url: "/research/"
 slug: "research"
 ---
 
-<div class="rk-intro">
-  <p>
-    My research develops next-generation statistical modeling frameworks that integrate data-driven learning with scientific reasoning.
-    I work at the intersection of scientifically guided statistical inference and computational Bayesian methods, with a focus on scientific machine learning,
-    approximate Bayesian inference, and Bayesian optimization, motivated by applications in engineering, physics, geosciences, and bioinformatics.
-  </p>
+
+<div class="rk-htl">
+  <button class="rk-htl-all rk-htl-all--active" data-year="all">All</button>
+  <div class="rk-htl-sep"></div>
+  <button class="rk-htl-node" data-year="2026">
+    <div class="rk-htl-dot rk-htl-dot--recent"></div>
+    <div class="rk-htl-lbl">2026</div>
+  </button>
+  <div class="rk-htl-conn"></div>
+  <button class="rk-htl-node" data-year="2025">
+    <div class="rk-htl-dot"></div>
+    <div class="rk-htl-lbl">2025</div>
+  </button>
+  <div class="rk-htl-conn"></div>
+  <button class="rk-htl-node" data-year="2024">
+    <div class="rk-htl-dot"></div>
+    <div class="rk-htl-lbl">2024</div>
+  </button>
+  <div class="rk-htl-conn"></div>
+  <button class="rk-htl-node" data-year="2022">
+    <div class="rk-htl-dot"></div>
+    <div class="rk-htl-lbl">2022</div>
+  </button>
 </div>
 
-<style>
-/* Animate Research blurb on page load (no :has needed) */
-.rk-intro{
-  opacity: 0;
-  transform: translateY(10px) scale(.985);
-  animation: rk-in .85s ease-out forwards;
-  animation-delay: .06s;
-  will-change: opacity, transform;
-}
-
-@keyframes rk-in{
-  from{ opacity: 0; transform: translateY(10px) scale(.985); }
-  to  { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@media (prefers-reduced-motion: reduce){
-  .rk-intro{
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-</style>
-
-                       
 <section class="rk-tl">
 
   <!-- 2026 -->
-<div class="rk-group">
+<div class="rk-group" data-year="2026">
 
 <div class="rk-year">2026</div>
 
@@ -55,8 +47,9 @@ slug: "research"
 <h3 class="rk-title">VaSST: Variational Inference for Symbolic Regression using Soft Symbolic Trees</h3>
 <div class="rk-meta">
 <strong>Somjit Roy</strong>, Pritam Dey, and Bani K. Mallick 
-<span class="rk-status"><em>Submitted, Under review</em></span>
+<span class="rk-status"><em>Accepted, UAI 2026</em></span>
 </div>
+<div class="rk-topics"><span class="rk-topic rk-topic--sr">Symbolic Regression</span><span class="rk-topic rk-topic--vi">Variational Inference</span></div>
 <div class="rk-pills">
 <!--<details class="rk-details">
 <summary class="rk-pill">Awards</summary>
@@ -83,6 +76,7 @@ Symbolic regression has recently gained traction in AI-driven scientific discove
 <strong>Somjit Roy</strong>, Prateek Jaiswal, Anirban Bhattacharya, Debdeep Pati, and Bani K. Mallick 
 <span class="rk-status"><em>Submitted, Under review</em></span>
 </div>
+<div class="rk-topics"><span class="rk-topic rk-topic--bo">Bayesian Optimization</span></div>
 <div class="rk-pills">
 <!--<details class="rk-details">
 <summary class="rk-pill">Awards</summary>
@@ -104,7 +98,7 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 </div>
 
 <!-- 2025 -->
-<div class="rk-group">
+<div class="rk-group" data-year="2025">
 <div class="rk-year">2025</div>
 
 <div class="rk-items">
@@ -117,7 +111,7 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 <strong>Somjit Roy</strong>, Pritam Dey, Debdeep Pati, and Bani K. Mallick
 <span class="rk-status"><em>Submitted, Under review</em></span>
 </div>
-
+<div class="rk-topics"><span class="rk-topic rk-topic--sr">Symbolic Regression</span></div>
 <div class="rk-pills">
 <details class="rk-details">
   <summary class="rk-pill">Abstract</summary>
@@ -146,9 +140,9 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 <h3 class="rk-title">A Generalized Tangent Approximation based Variational Inference Framework for Strongly Super-Gaussian Likelihoods</h3>
 <div class="rk-meta">
 <strong>Somjit Roy</strong>, Pritam Dey, Debdeep Pati, and Bani K. Mallick
-<span class="rk-status"><em>Major revision invited at JASA Theory & Methods</em></span>
+<span class="rk-status"><em>Major revision at JASA Theory & Methods</em></span>
 </div>
-
+<div class="rk-topics"><span class="rk-topic rk-topic--vi">Variational Inference</span></div>
 <div class="rk-pills">
 <details class="rk-details">
   <summary class="rk-pill">Abstract</summary>
@@ -163,7 +157,7 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 
 
 <!-- 2024 -->
-<div class="rk-group">
+<div class="rk-group" data-year="2024">
 
 <div class="rk-year">2024</div>
 
@@ -177,6 +171,7 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 Ajeet Kumar, Subhamoy Maitra, and <strong>Somjit Roy</strong>
 <span class="rk-status"><em></em>Journal of Statistical Theory and Practice</span>
 </div>
+<div class="rk-topics"><span class="rk-topic rk-topic--qc">Quantum Cryptography</span></div>
 <div class="rk-pills">
 <!--<details class="rk-details">
 <summary class="rk-pill">Awards</summary>
@@ -198,7 +193,7 @@ Selected ideas of statistical designs are exploited in this paper in constructio
 </div>
 
 <!-- 2022 -->
-<div class="rk-group">
+<div class="rk-group" data-year="2022">
 
 <div class="rk-year">2022</div>
 
@@ -212,6 +207,7 @@ Selected ideas of statistical designs are exploited in this paper in constructio
 Sreejit Chaudhury, Ajeet Kumar, Subhamoy Maitra, <strong>Somjit Roy</strong>, and Sourav Sen Gupta
 <span class="rk-status"><em></em>In Cyber Security, Cryptology, and Machine Learning</span>
 </div>
+<div class="rk-topics"><span class="rk-topic rk-topic--qc">Quantum Cryptography</span></div>
 <div class="rk-pills">
 <!--<details class="rk-details">
 <summary class="rk-pill">Awards</summary>
@@ -232,124 +228,29 @@ Mutually Unbiased Bases (MUBs) have varied applications in quantum information. 
 </div>
 </div>
 
-<!-- Ongoing -->
-<div class="rk-group">
-<div class="rk-year">Ongoing</div>
-<div class="rk-items">
-
-<!-- Paper 1 -->
-<article class="rk-item">
-<!-- <div class="rk-left"><span class="rk-tag">TAVIE-SVG</span></div> -->
-<div class="rk-body">
-<h3 class="rk-title">A Tangent Approximation based Variational Inference Framework for Identifying Spatially Varying Gene Expressions</h3>
-<div class="rk-meta">
-<strong>Somjit Roy</strong>, Pritam Dey, Debdeep Pati, and Bani K. Mallick
-<span class="rk-status"><em>In preparation</em></span>
-</div>
-
-<!-- <div class="rk-pills"> -->
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Abstract</summary>
-  <div class="rk-abstract">The advent of Scientific Machine Learning has heralded a transformative era in scientific discovery, driving progress across diverse domains. Central to this progress is uncovering scientific laws from experimental data through symbolic regression. However, existing approaches are dominated by heuristic algorithms or data-hungry black-box methods, which often demand low-noise settings and lack principled uncertainty quantification. Motivated by interpretable Statistical Artificial Intelligence, we develop a hierarchical Bayesian framework for symbolic regression that represents scientific laws as ensembles of tree-structured symbolic expressions endowed with a regularized tree prior. This coherent probabilistic formulation enables full posterior inference via an efficient Markov chain Monte Carlo algorithm, yielding a balance between predictive accuracy and structural parsimony. To guide symbolic model selection, we develop a marginal posterior–based criterion adhering to the Occam’s window principle and further quantify structural fidelity to ground truth through a tailored expression-distance metric. On the theoretical front, we establish near-minimax rate of Bayesian posterior concentration, providing the first rigorous guarantee in context of symbolic regression. Empirical evaluation demonstrates robust performance of our proposed methodology against state-of-the-art competing modules on a simulated example, a suite of canonical Feynman equations, and single-atom catalysis dataset.</div>
-</details> -->
-<!-- <a class="rk-pill rk-external"
-    href="https://arxiv.org/abs/2509.19710"
-    target="_blank" rel="noopener noreferrer">arXiv</a> -->
-
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Awards</summary>
-  <ul class="rk-awards"><li>2026 ASA SBSS Student Paper Award</li></ul>
-  <ul class="rk-awards"><li>2026 ASA SDSS Refereed Talk</li></ul>
-</details> -->
-<!-- </div> -->
-</div>
-</article>
-
-<!-- Paper 2 -->
-<article class="rk-item">
-<!-- <div class="rk-left"><span class="rk-tag">PINO</span></div> -->
-<div class="rk-body">
-<h3 class="rk-title">Scientifically Guided Inference for Physics-Informed Neural Operators</h3>
-<div class="rk-meta">
-<strong>Somjit Roy</strong>, Anirban Bhattacharya, and Debdeep Pati
-<span class="rk-status"><em>In preparation</em></span>
-</div>
-
-<!-- <div class="rk-pills"> -->
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Abstract</summary>
-  <div class="rk-abstract">The advent of Scientific Machine Learning has heralded a transformative era in scientific discovery, driving progress across diverse domains. Central to this progress is uncovering scientific laws from experimental data through symbolic regression. However, existing approaches are dominated by heuristic algorithms or data-hungry black-box methods, which often demand low-noise settings and lack principled uncertainty quantification. Motivated by interpretable Statistical Artificial Intelligence, we develop a hierarchical Bayesian framework for symbolic regression that represents scientific laws as ensembles of tree-structured symbolic expressions endowed with a regularized tree prior. This coherent probabilistic formulation enables full posterior inference via an efficient Markov chain Monte Carlo algorithm, yielding a balance between predictive accuracy and structural parsimony. To guide symbolic model selection, we develop a marginal posterior–based criterion adhering to the Occam’s window principle and further quantify structural fidelity to ground truth through a tailored expression-distance metric. On the theoretical front, we establish near-minimax rate of Bayesian posterior concentration, providing the first rigorous guarantee in context of symbolic regression. Empirical evaluation demonstrates robust performance of our proposed methodology against state-of-the-art competing modules on a simulated example, a suite of canonical Feynman equations, and single-atom catalysis dataset.</div>
-</details> -->
-<!-- <a class="rk-pill rk-external"
-    href="https://arxiv.org/abs/2509.19710"
-    target="_blank" rel="noopener noreferrer">arXiv</a> -->
-
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Awards</summary>
-  <ul class="rk-awards"><li>2026 ASA SBSS Student Paper Award</li></ul>
-  <ul class="rk-awards"><li>2026 ASA SDSS Refereed Talk</li></ul>
-</details> -->
-<!-- </div> -->
-</div>
-</article>
-
-<!-- Paper 3 -->
-<article class="rk-item">
-<!-- <div class="rk-left"><span class="rk-tag">SPINWAVE</span></div> -->
-<div class="rk-body">
-<h3 class="rk-title">Scalable Physics-Informed Neural Operator for Seismic Wave Modeling</h3>
-<div class="rk-meta">
-<strong>Somjit Roy</strong>, Kai Gao, and Ting Chen
-<span class="rk-status"><em>In preparation</em></span>
-</div>
-
-<!-- <div class="rk-pills"> -->
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Abstract</summary>
-  <div class="rk-abstract">The advent of Scientific Machine Learning has heralded a transformative era in scientific discovery, driving progress across diverse domains. Central to this progress is uncovering scientific laws from experimental data through symbolic regression. However, existing approaches are dominated by heuristic algorithms or data-hungry black-box methods, which often demand low-noise settings and lack principled uncertainty quantification. Motivated by interpretable Statistical Artificial Intelligence, we develop a hierarchical Bayesian framework for symbolic regression that represents scientific laws as ensembles of tree-structured symbolic expressions endowed with a regularized tree prior. This coherent probabilistic formulation enables full posterior inference via an efficient Markov chain Monte Carlo algorithm, yielding a balance between predictive accuracy and structural parsimony. To guide symbolic model selection, we develop a marginal posterior–based criterion adhering to the Occam’s window principle and further quantify structural fidelity to ground truth through a tailored expression-distance metric. On the theoretical front, we establish near-minimax rate of Bayesian posterior concentration, providing the first rigorous guarantee in context of symbolic regression. Empirical evaluation demonstrates robust performance of our proposed methodology against state-of-the-art competing modules on a simulated example, a suite of canonical Feynman equations, and single-atom catalysis dataset.</div>
-</details> -->
-<!-- <a class="rk-pill rk-external"
-    href="https://arxiv.org/abs/2509.19710"
-    target="_blank" rel="noopener noreferrer">arXiv</a> -->
-
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Awards</summary>
-  <ul class="rk-awards"><li>2026 ASA SBSS Student Paper Award</li></ul>
-  <ul class="rk-awards"><li>2026 ASA SDSS Refereed Talk</li></ul>
-</details> -->
-<!-- </div> -->
-</div>
-</article>
-
-<!-- Paper 4 -->
-<article class="rk-item">
-<!-- <div class="rk-left"><span class="rk-tag">mHierBOSSS</span></div> -->
-<div class="rk-body">
-<h3 class="rk-title">Multi-Property Materials Discovery using Multivariate HierBOSSS</h3>
-<div class="rk-meta">
-<strong>Somjit Roy</strong>, Pritam Dey, Debdeep Pati, Bani K. Mallick, and Raymundo Arr&oacute;yave
-<span class="rk-status"><em>In preparation</em></span>
-</div>
-
-<!-- <div class="rk-pills"> -->
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Abstract</summary>
-  <div class="rk-abstract">The advent of Scientific Machine Learning has heralded a transformative era in scientific discovery, driving progress across diverse domains. Central to this progress is uncovering scientific laws from experimental data through symbolic regression. However, existing approaches are dominated by heuristic algorithms or data-hungry black-box methods, which often demand low-noise settings and lack principled uncertainty quantification. Motivated by interpretable Statistical Artificial Intelligence, we develop a hierarchical Bayesian framework for symbolic regression that represents scientific laws as ensembles of tree-structured symbolic expressions endowed with a regularized tree prior. This coherent probabilistic formulation enables full posterior inference via an efficient Markov chain Monte Carlo algorithm, yielding a balance between predictive accuracy and structural parsimony. To guide symbolic model selection, we develop a marginal posterior–based criterion adhering to the Occam’s window principle and further quantify structural fidelity to ground truth through a tailored expression-distance metric. On the theoretical front, we establish near-minimax rate of Bayesian posterior concentration, providing the first rigorous guarantee in context of symbolic regression. Empirical evaluation demonstrates robust performance of our proposed methodology against state-of-the-art competing modules on a simulated example, a suite of canonical Feynman equations, and single-atom catalysis dataset.</div>
-</details> -->
-<!-- <a class="rk-pill rk-external"
-    href="https://arxiv.org/abs/2509.19710"
-    target="_blank" rel="noopener noreferrer">arXiv</a> -->
-
-<!-- <details class="rk-details">
-  <summary class="rk-pill">Awards</summary>
-  <ul class="rk-awards"><li>2026 ASA SBSS Student Paper Award</li></ul>
-  <ul class="rk-awards"><li>2026 ASA SDSS Refereed Talk</li></ul>
-</details> -->
-<!-- </div> -->
-</div>
-</article>
-
-  </div>
-</div>
 
 </section>
+
+<script>
+(function(){
+  const allBtn = document.querySelector('.rk-htl-all');
+  const nodes  = document.querySelectorAll('.rk-htl-node[data-year]');
+  const htl    = document.querySelector('.rk-htl');
+  const groups = document.querySelectorAll('.rk-group[data-year]');
+
+  function activate(year) {
+    const isAll = year === 'all';
+    allBtn.classList.toggle('rk-htl-all--active', isAll);
+    htl.classList.toggle('rk-htl--filtered', !isAll);
+    nodes.forEach(n => {
+      n.classList.toggle('rk-htl-node--selected', !isAll && n.dataset.year === year);
+    });
+    groups.forEach(g => {
+      g.style.display = (isAll || g.dataset.year === year) ? '' : 'none';
+    });
+  }
+
+  allBtn.addEventListener('click', () => activate('all'));
+  nodes.forEach(n => n.addEventListener('click', () => activate(n.dataset.year)));
+})();
+</script>

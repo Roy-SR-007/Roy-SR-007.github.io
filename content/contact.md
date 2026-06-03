@@ -35,69 +35,52 @@ max-width: 980px;
 margin: 0 auto;
 }
 
-/* ===== Hero blurb with your underline-gradient border language ===== */
-html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero{
-position: relative;
-border-radius: 16px;
-padding: 1.05rem 1.15rem;
-background: color-mix(in srgb, var(--ct-paper) 92%, white);
-box-shadow: none;
-margin: .75rem 0 1.35rem;
-overflow: hidden;
-
-/* subtle border */
-border: 1px solid var(--ct-line);
+/* ===== Hero — open typographic statement, no box ===== */
+html:has(head link[rel=”canonical”][href*=”/contact”]) .ct-hero{
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 2rem 0 .5rem;
+  margin: 0 0 2rem;
+  text-align: center;
+  overflow: visible;
+}
+html:has(head link[rel=”canonical”][href*=”/contact”]) .ct-hero::before{
+  display: none;
+}
+html:has(head link[rel=”canonical”][href*=”/contact”]) .ct-hero p{
+  font-family: “Source Serif 4”, Georgia, serif;
+  font-size: 1.18rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: var(--nk-muted);
+  max-width: 52ch;
+  margin: 0 auto;
+}
+/* Thin accent rule below hero */
+html:has(head link[rel=”canonical”][href*=”/contact”]) .ct-hero::after{
+  content: “”;
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--ct-accent) 35%, transparent);
+  margin: 1.4rem auto 0;
 }
 
-/* Gradient “ink” border ring (same vibe as your link underline gradient) */
-html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero::before{
-content:"";
-position:absolute;
-inset:0;
-padding:1px;              /* ring thickness */
-border-radius:16px;
-background: linear-gradient(
-90deg,
-color-mix(in srgb, var(--ct-accent) 75%, transparent),
-color-mix(in srgb, var(--ct-accent) 18%, transparent)
-);
--webkit-mask:
-linear-gradient(#000 0 0) content-box,
-linear-gradient(#000 0 0);
--webkit-mask-composite: xor;
-      mask-composite: exclude;
-pointer-events:none;
-opacity:.9;
-}
-
-/* Dark mode: creamy ring */
-body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero::before{
-background: linear-gradient(
-90deg,
-color-mix(in srgb, #ddd8d8 75%, transparent),
-color-mix(in srgb, #ddd8d8 18%, transparent)
-);
-opacity:.9;
-}
-
-html:has(head link[rel="canonical"][href*="/contact"]) .ct-hero p{
-margin:0;
-line-height:1.7;
-color: color-mix(in srgb, currentColor 88%, transparent);
-}
-
-/* Floating emoji animation (kept, but smoother) */
-html:has(head link[rel="canonical"][href*="/contact"]) .emoji-float{
-display:inline-block;
-animation: ctFloat 2.9s ease-in-out infinite;
-margin-left: .35rem;
+/* Floating emoji animation */
+html:has(head link[rel=”canonical”][href*=”/contact”]) .emoji-float{
+  display: inline-block;
+  animation: ctFloat 2.9s ease-in-out infinite;
+  margin-left: .35rem;
+  font-style: normal;
 }
 @keyframes ctFloat{
-0%,100%{ transform: translateY(0); }
-50%{ transform: translateY(-6px); }
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(-6px); }
 }
 @media (prefers-reduced-motion: reduce){
-html:has(head link[rel="canonical"][href*="/contact"]) .emoji-float{ animation:none; }
+  html:has(head link[rel=”canonical”][href*=”/contact”]) .emoji-float{ animation:none; }
 }
 
 /* ===== Grid of cards ===== */
@@ -113,51 +96,57 @@ html:has(head link[rel="canonical"][href*="/contact"]) .ct-grid{ grid-template-c
 
 /* Card */
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-card{
-position: relative;
-border-radius: 16px;
-border: 1px solid var(--ct-line);
-background: color-mix(in srgb, var(--ct-paper) 92%, white);
-padding: 1.05rem 1.15rem;
-transition: transform .16s ease, box-shadow .18s ease, border-color .18s ease;
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid var(--ct-line);
+  border-top: 3px solid color-mix(in srgb, var(--ct-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--ct-paper) 92%, white);
+  padding: 1.4rem 1.5rem;
+  transition: transform .16s ease, box-shadow .18s ease, border-color .18s ease;
 }
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-card:hover{
-transform: translateY(-2px);
-box-shadow: var(--ct-shadow);
-border-color: color-mix(in srgb, var(--ct-accent) 24%, transparent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(17,24,39,.07);
+  border-color: color-mix(in srgb, var(--ct-accent) 28%, transparent);
+  border-top-color: color-mix(in srgb, var(--ct-accent) 65%, transparent);
 }
 body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-card{
-background: color-mix(in srgb, var(--ct-paper) 88%, black);
+  background: color-mix(in srgb, var(--ct-paper) 88%, black);
+  border-top-color: color-mix(in srgb, #ddd8d8 35%, transparent);
 }
 body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-card:hover{
-border-color: color-mix(in srgb, #ddd8d8 22%, transparent);
+  border-color: color-mix(in srgb, #ddd8d8 22%, transparent);
 }
 
-/* Card header */
+/* Card label */
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-label{
-display:flex;
-align-items:center;
-gap:.55rem;
-font-weight: 850;
-letter-spacing: .02em;
-color: var(--ct-accent);
-margin: 0 0 .6rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ct-accent);
+  margin: 0 0 1rem;
+  opacity: .85;
 }
 body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-label{
-color:#ddd8d8;
+  color: #ddd8d8;
 }
 
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-sub{
-color: color-mix(in srgb, currentColor 70%, transparent);
-margin:0 0 .15rem;
-font-size: .98rem;
+  color: color-mix(in srgb, currentColor 70%, transparent);
+  margin: 0 0 .15rem;
+  font-size: .98rem;
 }
 
-/* Icons (inline SVG) */
+/* Icons */
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-icon{
-width: 1.05em;
-height: 1.05em;
-fill: currentColor;
-opacity: .95;
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  opacity: .9;
 }
 
 /* Mono fields */
@@ -198,33 +187,49 @@ gap:.7rem;
 flex-wrap: wrap;
 }
 
-/* Map card wrapper */
+/* Map wrapper */
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-map{
-margin-top: 1.2rem;
-border-radius: 16px;
-border: 1px solid var(--ct-line);
-overflow: hidden;
-background: color-mix(in srgb, var(--ct-paper) 92%, white);
-transition: transform .16s ease, box-shadow .18s ease, border-color .18s ease;
+  margin-top: 1.8rem;
+  border-radius: 18px;
+  border: 1px solid var(--ct-line);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ct-paper) 92%, white);
+  transition: transform .16s ease, box-shadow .18s ease, border-color .18s ease;
+  box-shadow: 0 4px 20px rgba(17,24,39,.04);
 }
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-map:hover{
-transform: translateY(-2px);
-box-shadow: var(--ct-shadow);
-border-color: color-mix(in srgb, var(--ct-accent) 24%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(17,24,39,.07);
+  border-color: color-mix(in srgb, var(--ct-accent) 22%, transparent);
 }
 body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-map{
-background: color-mix(in srgb, var(--ct-paper) 88%, black);
-}
-body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-map:hover{
-border-color: color-mix(in srgb, #ddd8d8 22%, transparent);
+  background: color-mix(in srgb, var(--ct-paper) 88%, black);
 }
 
-/* Make iframe fit */
+/* Map label header */
+html:has(head link[rel="canonical"][href*="/contact"]) .ct-map-label{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .85rem 1.4rem;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ct-accent);
+  border-bottom: 1px solid var(--ct-line);
+  opacity: .85;
+}
+body.dark html:has(head link[rel="canonical"][href*="/contact"]) .ct-map-label{
+  color: #ddd8d8;
+}
+
+/* iframe */
 html:has(head link[rel="canonical"][href*="/contact"]) .ct-map iframe{
-width:100%;
-height: 420px;
-border:0;
-display:block;
+  width: 100%;
+  height: 380px;
+  border: 0;
+  display: block;
 }
 
 /* Optional small note style */
@@ -297,8 +302,7 @@ html:has(head link[rel="canonical"][href*="/contact"]) .ct-map{ animation-delay:
 
 <div class="ct-hero">
 <p>
-  If you’d like to discuss research or collaboration, the best way to reach me is email
-  <span class="emoji-float">✉️</span>
+  If you’d like to discuss research or collaboration, the best way to reach me is email.
 </p>
 </div>
 
@@ -337,6 +341,10 @@ html:has(head link[rel="canonical"][href*="/contact"]) .ct-map{ animation-delay:
 </div>
 
 <div class="ct-map" aria-label="Map to the Department of Statistics, Texas A&M University">
+<div class="ct-map-label">
+  <svg class="ct-icon"><use href="#ct-pin"/></svg>
+  Department of Statistics · Texas A&amp;M University
+</div>
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.5804583667828!2d-96.34321489613892!3d30.619516895521986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864683966993d2d7%3A0x5c96a35581fb22a4!2sDepartment%20of%20Statistics!5e1!3m2!1sen!2sus!4v1762360573317!5m2!1sen!2sus"
   loading="lazy"
