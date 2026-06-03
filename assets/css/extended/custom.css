@@ -884,13 +884,13 @@ body.dark #menu a::before{
   word-break: normal;
 }
 
-/* Profile + home info: left aligned to avoid Safari word spacing rivers */
+/* Profile + home info: justified, no hyphens */
 .profile .profile_inner p,
 .home-info p{
-  text-align: left !important;
-  text-justify: auto;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: none;
+  -webkit-hyphens: none;
   overflow-wrap: anywhere;
   word-break: normal;
 }
@@ -925,6 +925,36 @@ body.dark #menu a::before{
   font-weight: 520;
 }
 
+/* Safari treats inline-block as an atomic unit, causing long link text like
+   "Texas A&M University" to be bumped to a new line as a whole. Fix: use
+   display:inline so the link flows with surrounding text.
+   The ::after position:absolute underline doesn't work reliably on inline
+   elements in Safari (width:100% resolves to the parent block, not the link).
+   Use background-image gradient instead — same left-sweep animation, no
+   position:absolute needed. Suppress the ::after for these links. */
+.profile_inner span p a,
+.profile_inner span a {
+  display: inline !important;
+  position: static !important;
+  background-image: linear-gradient(var(--nk-accent), var(--nk-accent));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size .25s ease, color .2s ease !important;
+}
+.profile_inner span p a:hover,
+.profile_inner span a:hover {
+  background-size: 100% 2px;
+}
+.profile_inner span p a::after,
+.profile_inner span a::after {
+  display: none !important;
+}
+body.dark .profile_inner span p a,
+body.dark .profile_inner span a {
+  background-image: linear-gradient(#ddd8d8, #ddd8d8);
+}
+
 /* Dark mode: slightly lighter still */
 body.dark .post-content a:not(.button):not(:has(svg)),
 body.dark .profile .profile_inner a:not(.button):not(:has(svg)),
@@ -951,21 +981,14 @@ body.dark .home-info a:not(.button):not(:has(svg)){
   margin-right: auto;
 }
 
-/* Make the bio text use a safe wrapping strategy */
+/* Bio text wrapping — justified, no hyphens */
 .profile .profile_inner p{
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   overflow-wrap: anywhere;
   word-break: normal;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* If you still prefer “even edges”, use soft justification without overflow */
-@media (min-width: 860px){
-  .profile .profile_inner p{
-    text-align: justify;
-    text-justify: inter-word;
-  }
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 /* Keep inline links from forcing overflow */
@@ -2096,7 +2119,7 @@ html:has(head link[rel="canonical"][href$="/news/"]) .ns-list li {
 html:has(head link[rel="canonical"][href$="/news/"]) details[open] .ns-list li::after {
   content: "";
   position: absolute;
-  left: calc(-.85rem - 1px);
+  left: calc(-.85rem - 2px);
   top: 50%;
   transform: translate(-50%, -50%);
   width: 9px;
@@ -2146,9 +2169,9 @@ html:has(head link[rel="canonical"][href$="/news/"]) .ns-badge {
   font-weight: 700;
   letter-spacing: .05em;
   text-transform: uppercase;
-  color: #15803d;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #86efac;
   margin-right: .4rem;
   vertical-align: middle;
   animation: ns-badge-pulse 2.5s ease-in-out infinite;
@@ -2160,7 +2183,7 @@ body.dark html:has(head link[rel="canonical"][href$="/news/"]) .ns-badge {
 }
 @keyframes ns-badge-pulse {
   0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, #22c55e 0%, transparent); }
-  50%     { box-shadow: 0 0 0 4px color-mix(in srgb, #22c55e 15%, transparent); }
+  50%     { box-shadow: 0 0 0 7px color-mix(in srgb, #22c55e 40%, transparent); }
 }
 
 /* =========================================================

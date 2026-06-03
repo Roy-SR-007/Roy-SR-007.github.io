@@ -17,10 +17,17 @@ slug: "news"
 
 <ul class="ns-list">
 
+<li data-type="paper">
+<span class="ns-month">06/26</span>
+<span class="ns-body">
+<span class="ns-badge">New</span><a href="https://arxiv.org/abs/2602.23561" target="_blank" rel="noopener">VaSST</a> accepted at <a href="https://www.auai.org/uai2026/" target="_blank" rel="noopener">UAI 2026</a>.
+</span>
+</li>
+
 <li data-type="award">
 <span class="ns-month">05/26</span>
 <span class="ns-body">
-<span class="ns-badge">New</span><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> secured <strong>2nd place</strong> at the Best of Statistical Science (<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>) conference, TidBit session.
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> secured <strong>2nd place</strong> at the Best of Statistical Science (<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>) conference, TidBit session.
 </span>
 </li>
 
