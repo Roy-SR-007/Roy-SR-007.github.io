@@ -89,6 +89,7 @@ params:
                 <div class="nk-aff-hrole">Summer Research Intern</div>
               </div>
             </div>
+            <div class="nk-bio-desktop">
             <p>
             I am a third-year Ph.D. student in the
             <a href="https://artsci.tamu.edu/statistics/index.html" target="_blank">Department of Statistics</a>
@@ -99,12 +100,27 @@ params:
             <a href="https://pages.stat.wisc.edu/~dpati2/" target="_blank">Dr. Debdeep Pati</a>.
             This summer, I have joined the Machine Learning
             team at <a href="https://www.upstart.com/" target="_blank">Upstart</a> as a Research Scientist Intern.
-            </p><br>
-            <p>
+            </p>
+            <p style="margin-top:.6rem">
             My research bridges data-driven learning and scientific reasoning through computational Bayes,
             with a focus on scientific machine learning, approximate Bayesian inference,
             and Bayesian optimization for complex scientific systems.
             </p>
+            </div>
+            <div class="nk-bio-mobile">
+            <p>
+            I am a third-year Ph.D. student in
+            <a href="https://artsci.tamu.edu/statistics/index.html" target="_blank">Texas A&M Statistics</a>,
+            advised by Drs. <a href="https://sites.google.com/tamu.edu/bani-k-mallick/bio" target="_blank">Bani K. Mallick</a>
+            and <a href="https://pages.stat.wisc.edu/~dpati2/" target="_blank">Debdeep Pati</a>.
+            This summer, I have joined the ML team at <a href="https://www.upstart.com/" target="_blank">Upstart</a> as a Research Scientist Intern.
+            </p>
+            <p style="margin-top:.4rem">
+            My research bridges data-driven learning and scientific reasoning through computational Bayes,
+            with a focus on scientific machine learning, approximate Bayesian inference,
+            and Bayesian optimization for complex scientific systems.
+            </p>
+            </div>
             <p style="margin-top:1.1rem;display:flex;flex-wrap:nowrap;justify-content:center;gap:.45rem;align-items:center">
               <span class="nk-chip">Symbolic Regression</span>
               <span class="nk-chip">Probabilistic SciML</span>
