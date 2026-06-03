@@ -3542,7 +3542,12 @@ main {
   /* ── Home: left-align profile section ── */
   .main .profile { justify-content: center !important; }
   .profile .profile_inner { align-items: center !important; }
-  .profile_inner .social-icons { justify-content: center !important; }
+  .profile_inner .social-icons {
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    display: flex !important;
+  }
   .profile_inner .buttons { justify-content: center !important; }
   /* All subtitle content centered */
   .profile_inner .subtitle div,
