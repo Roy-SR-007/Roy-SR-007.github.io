@@ -307,7 +307,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
       Based on <a href="https://arxiv.org/abs/2602.23561" target="_blank" rel="noopener">arXiv:2602.23561</a>.
     </div>
     <div class="sw-links">
-      <a class="sw-link" href="https://anonymous.4open.science/r/VaSST-62C7/" target="_blank" rel="noopener">→ GitHub</a>
+      <a class="sw-link" href="https://github.com/Roy-SR-007/VaSST" target="_blank" rel="noopener">→ GitHub</a>
     </div>
     <div class="nk-flip-cue">↻ Details</div>
   </div>
@@ -315,7 +315,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
     <div class="nk-duty-title">Maintainers &amp; Developers</div>
     <div class="nk-duty">
       <strong>Somjit Roy</strong> (Maintainer &amp; Developer) and Pritam Dey (Maintainer &amp; Developer) &mdash;
-      <a href="https://anonymous.4open.science/r/VaSST-62C7/" target="_blank" rel="noopener">GitHub</a>.
+      <a href="https://github.com/Roy-SR-007/VaSST" target="_blank" rel="noopener">GitHub</a>.
     </div>
     <div class="nk-flip-cue">↺ Back</div>
   </div>
