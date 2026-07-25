@@ -285,7 +285,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
   <div class="nk-face front">
     <span class="nk-cat nk-cat--travel">Travel Award</span>
     <div class="nk-title">2026 IMS Hannan Graduate Student Travel Award</div>
-    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> was awarded the 2026 IMS Hannan Graduate Student Travel Award by the Institute of Mathematical Statistics (IMS).</div>
+    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] was awarded the 2026 IMS Hannan Graduate Student Travel Award by the Institute of Mathematical Statistics (IMS).</div>
     <div class="nk-flip-cue">↻ Impact</div>
   </div>
   <div class="nk-face back">
@@ -303,7 +303,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
   <div class="nk-face front">
     <span class="nk-cat nk-cat--paper">Paper Award</span>
     <div class="nk-title">Best of Statistical Science 2026 — Student Paper Award</div>
-    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> secured <strong>2nd place</strong> at the Best of Statistical Science <nobr>(<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>)</nobr> conference, TidBit session.</div>
+    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] secured <strong>2nd place</strong> at the Best of Statistical Science <nobr>(<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>)</nobr> conference, TidBit session.</div>
     <div class="nk-flip-cue">↻ Impact</div>
   </div>
   <div class="nk-face back">
@@ -321,7 +321,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
   <div class="nk-face front">
     <span class="nk-cat nk-cat--fellow">Fellowship</span>
     <div class="nk-title">2026 ASA SDSS Student and Early Career Scholarship</div>
-    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> was awarded the 2026 ASA SDSS Student and Early Career Scholarship.</div>
+    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymx</a> [formerly HierBOSSS] was awarded the 2026 ASA SDSS Student and Early Career Scholarship.</div>
     <div class="nk-flip-cue">↻ Impact</div>
   </div>
   <div class="nk-face back">
@@ -339,7 +339,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
   <div class="nk-face front">
     <span class="nk-cat nk-cat--paper">Paper Award</span>
     <div class="nk-title">2026 ASA SBSS Student Paper Award</div>
-    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> was awarded the <a href="https://community.amstat.org/sbss/awards" target="_blank">2026 Student Paper Award</a> by ASA's Section on Bayesian Statistical Science (SBSS).</div>
+    <div class="nk-desc"><a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] was awarded the <a href="https://community.amstat.org/sbss/awards" target="_blank">2026 Student Paper Award</a> by ASA's Section on Bayesian Statistical Science (SBSS).</div>
     <div class="nk-flip-cue">↻ Impact</div>
   </div>
   <div class="nk-face back">
@@ -362,7 +362,7 @@ body.dark .nk-flip-cue { color: #ddd8d8; }
   </div>
   <div class="nk-face back">
     <div class="nk-duty-title">Award Impact</div>
-    <div class="nk-duty">Presented <a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> at <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel="noopener">SDSS 2026</a> in Milwaukee, Wisconsin, USA.</div>
+    <div class="nk-duty">Presented <a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] at <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel="noopener">SDSS 2026</a> in Milwaukee, Wisconsin, USA.</div>
     <div class="nk-flip-cue">↺ Back</div>
   </div>
 </div>

@@ -104,18 +104,18 @@ We study Gaussian Process Thompson Sampling (GP-TS) for sequential decision-maki
 <div class="rk-items">
 <!-- Paper 1 -->
 <article class="rk-item">
-<div class="rk-left"><span class="rk-tag">HierBOSSS</span></div>
+<div class="rk-left"><span class="rk-tag">BayeSymX</span></div>
 <div class="rk-body">
-<h3 class="rk-title">Hierarchical Bayesian Operator-induced Symbolic Regression Trees for Structural Learning of Scientific Expressions</h3>
+<h3 class="rk-title">Probabilistic Symbolic Regression for Equation Discovery via Operator-induced and Regularized Symbolic Forests</h3>
 <div class="rk-meta">
-<strong>Somjit Roy</strong>, Pritam Dey, Debdeep Pati, and Bani K. Mallick
+<strong>Somjit Roy</strong>, Pritam Dey, Bani K. Mallick, and Debdeep Pati
 <span class="rk-status"><em>Submitted, Under review</em></span>
 </div>
 <div class="rk-topics"><span class="rk-topic rk-topic--sr">Symbolic Regression</span></div>
 <div class="rk-pills">
 <details class="rk-details">
   <summary class="rk-pill">Abstract</summary>
-  <div class="rk-abstract">The advent of Scientific Machine Learning has heralded a transformative era in scientific discovery, driving progress across diverse domains. Central to this progress is uncovering scientific laws from experimental data through symbolic regression. However, existing approaches are dominated by heuristic algorithms or data-hungry black-box methods, which often demand low-noise settings and lack principled uncertainty quantification. Motivated by interpretable Statistical Artificial Intelligence, we develop a hierarchical Bayesian framework for symbolic regression that represents scientific laws as ensembles of tree-structured symbolic expressions endowed with a regularized tree prior. This coherent probabilistic formulation enables full posterior inference via an efficient Markov chain Monte Carlo algorithm, yielding a balance between predictive accuracy and structural parsimony. To guide symbolic model selection, we develop a marginal posterior–based criterion adhering to the Occam’s window principle and further quantify structural fidelity to ground truth through a tailored expression-distance metric. On the theoretical front, we establish near-minimax rate of Bayesian posterior concentration, providing the first rigorous guarantee in context of symbolic regression. Empirical evaluation demonstrates robust performance of our proposed methodology against state-of-the-art competing modules on a simulated example, a suite of canonical Feynman equations, and single-atom catalysis dataset.</div>
+  <div class="rk-abstract">Symbolic regression has emerged as a powerful tool for artificial intelligence-driven scientific discovery by learning interpretable analytical expressions that reveal governing relationships directly from data. Existing methods, however, often rely on heuristic search, struggle to balance predictive accuracy with expression complexity in noisy settings, and offer limited characterization of symbolic uncertainty. Probabilistic approaches that address these challenges in a unified manner remain underexplored. We introduce a probabilistic symbolic regression framework that represents mathematical expressions as ensembles of symbolic trees. A regularizing prior over tree topology controls expression complexity, while an Occam's window-based posterior summary captures uncertainty across plausible symbolic models. Given the limited existing theoretical treatment of symbolic regression, we develop posterior concentration guarantees under approximate symbolic realizability, yielding a near-parametric rate for exact symbolic representability. Additionally, we establish a sharp oracle concentration result under symbolic misspecification. Comparisons of our proposed framework with state-of-the-art competitors demonstrate superior predictive accuracy, optimal symbolic complexity, and stable structural recovery when learning benchmark scientific equations, together with the identification of scientifically interpretable descriptors in a challenging materials discovery problem.</div>
 </details>
 <a class="rk-pill rk-external"
     href="https://arxiv.org/abs/2509.19710"

@@ -27,28 +27,28 @@ slug: "news"
 <li data-type="award">
 <span class="ns-month">05/26</span>
 <span class="ns-body">
-<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> secured <strong>2nd place</strong> at the Best of Statistical Science (<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>) conference, TidBit session.
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] secured <strong>2nd place</strong> at the Best of Statistical Science (<a href="https://calendar.tamu.edu/statistics/event/358551-2026-best-of-statistical-science-workshop-boss-2026" target="_blank" rel="noopener">BOSS 2026</a>) conference, TidBit session.
 </span>
 </li>
 
 <li data-type="award">
 <span class="ns-month">04/26</span>
 <span class="ns-body">
-<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> got awarded the 2026 IMS Hannan Graduate Student Travel Award for presenting at <a href="https://isba2026.github.io" target="_blank" rel="noopener">2026 ISBA World Meeting</a> in Nagoya, Japan.
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] got awarded the 2026 IMS Hannan Graduate Student Travel Award for presenting at <a href="https://isba2026.github.io" target="_blank" rel="noopener">2026 ISBA World Meeting</a> in Nagoya, Japan.
 </span>
 </li>
 
 <li data-type="award">
 <span class="ns-month">04/26</span>
 <span class="ns-body">
-<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> awarded the <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel="noopener">2026 ASA SDSS Student and Early Career Scholarship</a> by the American Statistical Association.
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] awarded the <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel="noopener">2026 ASA SDSS Student and Early Career Scholarship</a> by the American Statistical Association.
 </span>
 </li>
 
 <li data-type="award">
 <span class="ns-month">04/26</span>
 <span class="ns-body">
-<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> awarded the Research and Presentation (<a href="https://grad.tamu.edu/funding/travel-awards/index.html" target="_blank" rel="noopener">RAP</a>) Travel Award by Texas A&amp;M University, Graduate School.
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] awarded the Research and Presentation (<a href="https://grad.tamu.edu/funding/travel-awards/index.html" target="_blank" rel="noopener">RAP</a>) Travel Award by Texas A&amp;M University, Graduate School.
 </span>
 </li>
 
@@ -69,7 +69,7 @@ Will be joining <a href="https://www.upstart.com" target="_blank" rel="noopener"
 <li data-type="media">
 <span class="ns-month">02/26</span>
 <span class="ns-body">
-<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">HierBOSSS</a> got featured in Texas A&M College News [<a href="http://tx.ag/SomjitRoy" target="_blank" rel="noopener">http://tx.ag/SomjitRoy</a>].
+<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">BayeSymX</a> [formerly HierBOSSS] got featured in Texas A&M College News [<a href="http://tx.ag/SomjitRoy" target="_blank" rel="noopener">http://tx.ag/SomjitRoy</a>].
 </span>
 </li>
 
@@ -84,7 +84,7 @@ submitted (<a href="https://arxiv.org/abs/2602.14472" target="_blank" rel="noope
 <li data-type="talk">
 <span class="ns-month">01/26</span>
 <span class="ns-body">
-Invited talk on <em>Hierarchical Bayesian Operator-induced Symbolic Regression Trees for Structural Learning of Scientific Expressions</em>
+Invited talk on <em>Hierarchical Bayesian Operator-induced Symbolic Regression Trees for Structural Learning of Scientific Expressions</em> [now BayeSymX]
 (<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">arXiv:2509.19710</a>)
 at the <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel="noopener">
 2026 Symposium on Data Science & Statistics</a> in Milwaukee, Wisconsin.
@@ -94,7 +94,7 @@ at the <a href="https://ww2.amstat.org/meetings/sdss/2026/" target="_blank" rel=
 <li data-type="award">
 <span class="ns-month">01/26</span>
 <span class="ns-body">
-Our work <em>Hierarchical Bayesian Operator-induced Symbolic Regression Trees for Structural Learning of Scientific Expressions</em>
+Our work <em>Hierarchical Bayesian Operator-induced Symbolic Regression Trees for Structural Learning of Scientific Expressions</em> [now BayeSymX]
 (<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noopener">arXiv:2509.19710</a>)
 was awarded the
 <a href="https://community.amstat.org/sbss/awards" target="_blank" rel="noopener">
@@ -158,6 +158,7 @@ submitted (<a href="https://arxiv.org/abs/2509.19710" target="_blank" rel="noope
 </span>
 </li>
 
+<!--
 <li data-type="code">
 <span class="ns-month">09/25</span>
 <span class="ns-body">
@@ -165,6 +166,7 @@ First official GitHub release of
 <a href="https://github.com/Roy-SR-007/HierBOSSS" target="_blank" rel="noopener">HierBOSSS</a>.
 </span>
 </li>
+-->
 
 <li data-type="internship">
 <span class="ns-month">05/25</span>
